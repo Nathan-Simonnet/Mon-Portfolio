@@ -1,0 +1,112 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+
+@font-face {
+    font-family: 'Jost';
+    src: url(/src/styles/fonts/Jost/Jost-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/src/styles/fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: $white-color;
+    box-sizing: border-box;
+    font-family: 'Jost', 'Montserrat';
+    border: 1px solid red;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background:url(/src/assets/images/background_black-desk.jpg);
+    // border: 4px solid orange;
+}
+
+main {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+
+@include breakpoint(medium) {
+
+    li{
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    h3 {
+        font-size: 1.875rem;
+    }
+}
+
+@include breakpoint(small) {
+    
+    li{
+        font-size: 1rem;
+    }
+
+    h1{
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+}
