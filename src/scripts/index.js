@@ -1,5 +1,23 @@
 console.log("test")
 
+// // Header
+// Flags
+document.querySelectorAll('.flag-container').forEach((flag) => {
+    flag.addEventListener('click', () => {
+        if (!flag.classList.contains("current-language")) {
+            // remove class current-language
+            document.querySelectorAll('.flag-container').forEach((flagToTrim) => {
+                console.log(flagToTrim)
+                flagToTrim.classList.remove("current-language")
+                console.log(flagToTrim)
+            });
+            // Add class current-language 
+            flag.classList.add(("current-language"))
+        }
+    });
+});
+
+//hamburger
 document.querySelector('.hamburger').addEventListener('click', function () {
 
     this.classList.toggle('is-active');
@@ -20,8 +38,10 @@ document.querySelector('.hamburger').addEventListener('click', function () {
         ul.classList.remove("open");
         this.classList.remove('is-active');
     });
-    
+
 });
+
+
 
 //    // Prevent hamburger alteration for keyboard users
 //    document.addEventListener('keydown', function (event) {

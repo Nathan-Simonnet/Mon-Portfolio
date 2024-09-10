@@ -16,16 +16,15 @@
 <div id="root">
     <header>
         <div class="flags-container">
-            <div class="flag-container">
-                <img src="/src/assets/images/Flags/flag-france_80px.png" alt="Drapeau de France" width="60" id="flag_france" class="flag" tabindex="0" aria-label="Cliquez pour avoir le site en français">
+            <div class="flag-container current-language">
+                <img src="/src/assets/images/Flags/flag-france_80px.png" alt="Drapeau de France" width="60" id="flag-france" class="flag current-language" tabindex="0" aria-label="Cliquez pour avoir le site en français">
             </div>
             <div class="flag-container">
-                <img src="/src/assets/images/Flags/flag-united-kingdom_80px.png" alt="Drapeau de l'Angleterre" width="60" id="flag_UK" class="flag" tabindex="0" aria-label="Click for english version">
+                <img src="/src/assets/images/Flags/flag-united-kingdom_80px.png" alt="Drapeau de l'Angleterre" width="60" id="flag-UK" class="flag" tabindex="0" aria-label="Click for english version">
             </div>
         </div>
 
             <nav>
-                <!-- <button class="hamburger hamburger--slider" type="button"> -->
                 <button class="hamburger hamburger--collapse" aria-label="Cliquez pour faire apparaitre la bar de naviguation verticale">
                     nav bar
                     <span class="hamburger-box">
@@ -40,10 +39,12 @@
             </ul>
         </nav>
     </header>
-
-    <section id="homePage">
+    
+    <section id="home-page">
+     <div class="titles-container"> 
         <h1>Nathan Simonnet</h1>
-        <h2>Developpeur web</h2>
+        <h2 id="text-animation">Développeur web<span id="blinking-cursor"></span></h2>
+    </div>
     </section>
     <section id="projects"></section>
     <section id="tools"></section>
