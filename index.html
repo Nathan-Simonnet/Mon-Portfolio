@@ -4,21 +4,56 @@
 <meta charset='UTF-8' >
 <meta http-equiv='X-UA-Compatible' content='IE=edge' >
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<link rel="icon" href="/src/assets/images/logo_my-icon.png" type="image/x-icon">
 <meta name='description' content=''>
 
+<link rel="stylesheet" href="node_modules/hamburgers/dist/hamburgers.css">
 <!-- <link rel='stylesheet' href='style.min.css'> -->
 <link rel='stylesheet' href='src/styles/style.css'>
-<title></title>
+<title>Portfolio de Nathan Simonnet</title>
 </head>
 <body>
-<h1>Nathan Simonnet</h1>
-<h2>Developpeur web</h2>
+<div id="root">
+    <header>
+        <div class="flags-container">
+            <div class="flag-container">
+                <img src="/src/assets/images/Flags/flag-france_80px.png" alt="Drapeau de France" width="60" id="flag_france" class="flag" tabindex="0" aria-label="Cliquez pour avoir le site en français">
+            </div>
+            <div class="flag-container">
+                <img src="/src/assets/images/Flags/flag-united-kingdom_80px.png" alt="Drapeau de l'Angleterre" width="60" id="flag_UK" class="flag" tabindex="0" aria-label="Click for english version">
+            </div>
+        </div>
 
-<ul>
-    <li>oui</li>
-    <li>Non</li>
-    <li>maybe</li>
-</ul>
+            <nav>
+                <!-- <button class="hamburger hamburger--slider" type="button"> -->
+                <button class="hamburger hamburger--collapse" aria-label="Cliquez pour faire apparaitre la bar de naviguation verticale">
+                    nav bar
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner" ></span>
+                    </span>
+                  </button>
+            <ul >
+                <li><a href="#projects" class="nav-link" id="link-project">Projets</a></li>
+                <li><a href="#tools" class="nav-link" id="link-tools">Technos</a></li>
+                <li><a href="#profile" class="nav-link" id="link-profile">Portrait</a></li>
+                <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="homePage">
+        <h1>Nathan Simonnet</h1>
+        <h2>Developpeur web</h2>
+    </section>
+    <section id="projects"></section>
+    <section id="tools"></section>
+    <section id="profile"></section>
+    <section id="contact"></section>
+    <footer></footer>
+</div>
+
+
+      
 
 <!-- <script src='index.min.js'></script> -->
 <script src='src/scripts/index.js'></script>
