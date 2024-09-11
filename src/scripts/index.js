@@ -1,23 +1,69 @@
-console.log("test")
+
+let lang = "fra";
+
+// //Home page
+// ============================================================
+// Textanim
+// -------------------------------------
+
+function textInjection() {
+    const textAnimContainer = document.getElementById('text-animation');
+    textAnimContainer.textContent = "";
+    let letterCounter = 0;
+
+    const devWebArray = {
+        "fra": "Développeur web",
+        "eng": "Web developer"
+    }
+    const textToAnim = devWebArray[lang];
+    let currentLang =lang;
+
+    letterInjection()
+    function letterInjection() {
+        setTimeout(() => {
+            textAnimContainer.textContent += textToAnim[letterCounter];
+            letterCounter++;
+            if (letterCounter < textToAnim.length && currentLang == lang) {
+                letterInjection();
+            }
+        }, 120)
+    }
+}
+
+textInjection()
 
 // // Header
+// ==================================================================
 // Flags
+// ----------------
 document.querySelectorAll('.flag-container').forEach((flag) => {
-    flag.addEventListener('click', () => {
+    
+    flag.addEventListener('click', (e) => {
+
         if (!flag.classList.contains("current-language")) {
             // remove class current-language
             document.querySelectorAll('.flag-container').forEach((flagToTrim) => {
-                console.log(flagToTrim)
-                flagToTrim.classList.remove("current-language")
-                console.log(flagToTrim)
+                flagToTrim.classList.remove("current-language");
             });
             // Add class current-language 
-            flag.classList.add(("current-language"))
+            flag.classList.add(("current-language"));
+            lang = flag.dataset.lang;
+            // Launch the text animation (web dev)
+            setTimeout(() => {
+                textInjection();
+            },200)
+            console.log(lang)
         }
+    });
+
+    // Execute the div click event for keyboard user
+    flag.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {e.target.click();}
     });
 });
 
 //hamburger
+// -----------------------------
 document.querySelector('.hamburger').addEventListener('click', function () {
 
     this.classList.toggle('is-active');
@@ -41,8 +87,6 @@ document.querySelector('.hamburger').addEventListener('click', function () {
 
 });
 
-
-
 //    // Prevent hamburger alteration for keyboard users
 //    document.addEventListener('keydown', function (event) {
 //     const ul = document.querySelector('header>nav>ul');
@@ -52,4 +96,18 @@ document.querySelector('.hamburger').addEventListener('click', function () {
 //         console.log(ul.classList.contains("open"))
 //     }
 // });
+
+// // Projects
+// // ===================================================================
+
+
+
+
+
+
+
+
+
+
+
 

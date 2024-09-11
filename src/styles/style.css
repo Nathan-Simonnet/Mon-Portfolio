@@ -17,6 +17,7 @@
   text-shadow: 1px 1px 2px #000;
   font-family: "Jost", "Montserrat";
   box-sizing: border-box;
+  border: 1px solid red;
   color: white;
 }
 
@@ -76,6 +77,18 @@ h3 {
   font-size: 2.5rem;
 }
 
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6, p {
+  font-size: 1rem;
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 3rem;
@@ -128,8 +141,8 @@ header .flags-container .flag-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
 }
 header .flags-container .flag-container .flag {
   width: 100%;
@@ -145,8 +158,8 @@ header .flags-container .flag-container.current-language::after {
   content: "";
   background: linear-gradient(90deg, red, rgb(244, 133, 133));
   width: 100%;
-  height: 4px;
-  bottom: 0;
+  height: 3px;
+  bottom: -4px;
   left: 0;
   animation: flagUnderlineAnimation 0.2s ease-out;
 }
@@ -162,13 +175,12 @@ header nav ul {
   transition: 0;
 }
 header nav ul .nav-link {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8), -1px 1px 2px rgba(0, 0, 0, 0.8), 1px -1px 2px rgba(0, 0, 0, 0.8), -1px -1px 2px rgba(0, 0, 0, 0.8);
 }
 header nav ul .nav-link:hover {
   color: #BB0E2E;
-  color: #ed2c4f;
   text-shadow: 1px 1px 2px #000;
 }
 
@@ -196,10 +208,6 @@ header nav ul .nav-link:hover {
     right: 60px;
     top: 120px;
   }
-  header nav ul .nav-link {
-    font-size: 1.4rem;
-    font-weight: 600;
-  }
   header nav ul.open {
     opacity: 1;
     position: fixed;
@@ -223,8 +231,12 @@ header nav ul .nav-link:hover {
   header nav .hamburger {
     display: block;
   }
+  header nav ul {
+    right: 40px;
+    top: 80px;
+  }
   header nav ul .nav-link {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   header nav ul.open {
     padding: 30px;
@@ -251,29 +263,127 @@ section#home-page .titles-container {
   align-items: flex-start;
 }
 section#home-page .titles-container h2 {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  position: relative;
+  height: 3rem;
   color: #BB0E2E;
 }
-section#home-page .titles-container h2 span {
+section#home-page .titles-container h2::after {
+  content: "";
+  color: white;
   position: absolute;
-  right: -10px;
-  height: 80%;
-  width: 6px;
+  top: 0;
+  right: -6px;
+  height: 100%;
+  width: 4px;
   background: #BB0E2E;
-  border-radius: 2px;
+  border-radius: 4px;
   animation: blinkingCursorAnimation 0.5s ease-in-out infinite;
 }
 
+@media (max-width: 900px) {
+  section#homePage {
+    height: calc(100vh - 120px);
+  }
+  section#homePage .titles-container h2 {
+    height: 2.25rem;
+  }
+}
 @media (max-width: 600px) {
   section#homePage {
     height: calc(100vh - 120px);
   }
+  section#homePage .titles-container h2 {
+    height: 1.5rem;
+  }
 }
-section#projects {
-  height: 100vh;
+@keyframes appImageAnimation {}
+section#projects .app-cards-container .app-card {
+  position: relative;
+  width: 360px;
+}
+section#projects .app-cards-container .app-card .app-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 250px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #E4E4E4;
+  cursor: alias;
+  transition: 0.6s;
+}
+section#projects .app-cards-container .app-card .app-img-container .app-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: 0.3s;
+}
+section#projects .app-cards-container .app-card .app-img-container:hover .app-img {
+  width: 95%;
+  height: 95%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: 0.6s ease-out;
+}
+section#projects .app-cards-container .app-card .app-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 12px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #E4E4E4;
+}
+section#projects .app-cards-container .app-card .app-details-container .app-details-title-and-github-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+section#projects .app-cards-container .app-card .app-details-container .app-details-title-and-github-container .app-details-title {
+  font-family: "Montserrat";
+  color: black;
+  font-weight: bolder;
+  text-shadow: none;
+}
+section#projects .app-cards-container .app-card .app-details-container .app-details-title-and-github-container .app-details-github-container {
+  width: 30px;
+  transition: 0.1s;
+}
+section#projects .app-cards-container .app-card .app-details-container .app-details-title-and-github-container .app-details-github-container .app-details-github-link {
+  cursor: alias;
+}
+section#projects .app-cards-container .app-card .app-details-container .app-details-title-and-github-container .app-details-github-container .app-details-github-link .app-details-github-img {
+  width: 100%;
+}
+section#projects .app-cards-container .app-card .app-details-container .app-details-title-and-github-container .app-details-github-container:hover {
+  transform: scale(1.1);
+}
+section#projects .app-cards-container .app-card .app-details-container .app-details-paragraph-container p {
+  color: #000;
+  text-shadow: none;
+  font-weight: bold;
+}
+section#projects .app-cards-container .app-card .app-details-container .app-details-logos-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+section#projects .app-cards-container .app-card .app-details-container .app-details-logos-container .app-details-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

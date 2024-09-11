@@ -2,6 +2,7 @@
   from {
     opacity: 0.1;
   }
+
   to {
     opacity: 1;
   }
@@ -20,54 +21,65 @@ section#home-page {
     align-items: flex-start;
 
     h2 {
+      position: relative;
 
       display: flex;
       justify-content: flex-start;
       align-items: center;
-
-      position: relative;
+      
+      height: 3rem;
 
       color: $dark-red-color;
 
-      // Blinking cursor anim
-      span {
-        position: absolute;
-        right: -10px;
-        height: 80%;
-        width: 6px;
-        background: $dark-red-color;
-        border-radius:2px;
-        animation: blinkingCursorAnimation 0.5s ease-in-out infinite;
-        // border: 1px solid black;
+      // span {
+      //   position: absolute;
+      //   right: -10px;
+      //   height: 80%;
+      //   width: 6px;
+      //   background: $dark-red-color;
+      //   border-radius:2px;
+      //   animation: blinkingCursorAnimation 0.5s ease-in-out infinite;
+      //   // border: 1px solid black;
+      // }
+    }
+
+    h2::after {
+      content: "";
+      color: white;
+      position: absolute;
+      top: 0;
+      right: -6px;
+      height: 100%;
+      width: 4px;
+      background: $dark-red-color;
+      border-radius: 4px;
+      animation: blinkingCursorAnimation 0.5s ease-in-out infinite;
+    }
+  }
+}
+
+@include breakpoint(medium) {
+  section#homePage {
+    height: calc(100vh - 120px);
+
+    .titles-container {
+
+      h2 {
+        height: 2.25rem;
       }
     }
   }
 }
 
-
-// ::after {
-//   color: var(--wheat);
-//   content: "";
-//   position: absolute;
-//   height: 100%;
-//   width: 4px;
-//   background: var(--bordeaux);
-//   border-radius: 4px;
-//   bottom: 0%;
-//   right: -4px;
-//   animation: blinkingCursorAnimation 0.5s ease-in-out infinite;
-// }
-
-// // Blinking cursor anim
-// #blinking-cursor{
-//     height: 12px;
-//     width: 6px;
-//     background:$light-red-color;
-
-// }
-
 @include breakpoint(small) {
   section#homePage {
     height: calc(100vh - 120px);
+
+    .titles-container {
+
+      h2 {
+        height: 1.5rem;
+      }
+    }
   }
 }
