@@ -7,8 +7,10 @@ section#tools{
         justify-content:center;
         align-items:center;
         
-        padding:60px;
+       margin-top: 60px;
         gap: 60px;
+
+         border: 1px solid orange;
 
        .specific-tools-container{
 
@@ -49,6 +51,7 @@ section#tools{
 
                 column-gap: 120px;
                 row-gap: 60px;
+                padding:0 30px 0 30px;
 
                 .tools-logo-container{
 
@@ -57,9 +60,7 @@ section#tools{
                     align-items:center;
 
                     .tools-logo{
-
                         width: 100px;
-
                     }
                 }
             }
@@ -92,8 +93,6 @@ section#tools{
 @include breakpoint(small) {
     section#tools{
         .tools-container{
-            padding-top:30px;
-            padding-bottom:30px;
             padding-left: 0;
             padding-right: 0;
             gap: 30px;

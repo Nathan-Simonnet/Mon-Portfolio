@@ -1,0 +1,37 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    .footer-links-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        .footer-link-container {
+            .footer-link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .footer-link-img {}
+
+                .footer-link-img:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .footer-last_update-container {
+        .footer-last_update {}
+    }
+}
+
+
+@include breakpoint(medium) {}
+
+@include breakpoint(small) {}

@@ -1,0 +1,44 @@
+section#contact{
+    .section-contact-title{
+        .section-title{
+        }
+    }
+
+    .contact-container{
+        margin-top: 60px;
+        #btn-contact{
+            height: 50px;
+            width: 240px;
+        }
+    }
+}
+
+
+@include breakpoint(medium) {
+    .section-contact-title{
+        .section-title{
+        }
+    }
+
+    .contact-container{
+        text-align:center;
+        #btn-contact{
+            // height: 50px;
+            // width: 240px;
+        }
+    }
+}
+
+@include breakpoint(small) {
+    .section-contact-title{
+        .section-title{
+        }
+    }
+
+    .contact-container{
+        #btn-contact{
+            // height: 50px;
+            // width: 240px;
+        }
+    }
+}
