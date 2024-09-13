@@ -1,19 +1,20 @@
-@keyframes appImageAnimation {
-    from {}
-
-    to {}
-}
-
 section#projects {
-    // height: 100vh;
 
     .section-title-container {}
 
     .app-cards-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 60px;
+        width: 100%;
+        padding: 60px 0 60px 0;
 
         .app-card {
             position: relative;
             width: 360px;
+
             .app-img-container {
                 display: flex;
                 justify-content: center;
@@ -25,6 +26,7 @@ section#projects {
                 background: #E4E4E4;
                 cursor: alias;
                 transition: 0.6s;
+
                 .app-img {
                     display: flex;
                     justify-content: center;
@@ -33,10 +35,11 @@ section#projects {
                     height: 100%;
                     border-top-left-radius: 10px;
                     border-top-right-radius: 10px;
-                 
-                    transition: 0.3s ;
+
+                    transition: 0.3s;
                 }
             }
+
             .app-img-container:hover {
                 .app-img {
                     width: 95%;
@@ -46,6 +49,7 @@ section#projects {
                     transition: 0.6s ease-out;
                 }
             }
+
             .app-details-container {
                 display: flex;
                 flex-direction: column;
@@ -56,27 +60,33 @@ section#projects {
                 border-bottom-left-radius: 10px;
                 border-bottom-right-radius: 10px;
                 background: #E4E4E4;
+
                 .app-details-title-and-github-container {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     width: 100%;
+
                     .app-details-title {
                         font-family: 'Montserrat';
                         color: black;
                         font-weight: bolder;
                         text-shadow: none;
                     }
+
                     .app-details-github-container {
                         width: 30px;
                         transition: 0.1s;
+
                         .app-details-github-link {
                             cursor: alias;
+
                             .app-details-github-img {
                                 width: 100%;
                             }
                         }
                     }
+
                     .app-details-github-container:hover {
                         transform: scale(1.1);
                     }
@@ -95,10 +105,12 @@ section#projects {
                     justify-content: flex-start;
                     align-items: center;
                     gap: 20px;
+
                     .app-details-logo-container {
                         display: flex;
                         justify-content: center;
                         align-items: center;
+
                         .app-details-logo {}
                     }
                 }
@@ -107,7 +119,18 @@ section#projects {
     }
 }
 
-
 @include breakpoint(medium) {}
 
-@include breakpoint(small) {}
+@include breakpoint(small) {
+
+    section#projects {
+        .app-cards-container {
+            gap: 30px;
+            padding: 30px 0 30px 0;
+
+            .app-card {
+                transform: scale(0.8);
+            }
+        }
+    }
+}

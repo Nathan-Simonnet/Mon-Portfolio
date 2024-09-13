@@ -17,7 +17,6 @@
   text-shadow: 1px 1px 2px #000;
   font-family: "Jost", "Montserrat";
   box-sizing: border-box;
-  border: 1px solid red;
   color: white;
 }
 
@@ -31,9 +30,12 @@ body {
   overflow-x: hidden;
 }
 
-#root {
-  margin-left: 60px;
-  margin-right: 60px;
+section, header, footer {
+  padding: 30px 60px 30px 60px;
+}
+
+section:not(#home-page), footer {
+  background: rgba(0, 0, 0, 0.7490196078);
 }
 
 a {
@@ -89,7 +91,23 @@ h6, p {
   font-size: 1rem;
 }
 
-@media (max-width: 900px) {
+.section-title {
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  color: white;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #BB0E2E;
+  border-radius: 4px;
+}
+
+@media (max-width: 926px) {
   h1 {
     font-size: 3rem;
   }
@@ -98,6 +116,9 @@ h6, p {
   }
   h3 {
     font-size: 1.875rem;
+  }
+  .section-title {
+    text-align: center;
   }
 }
 @media (max-width: 600px) {
@@ -184,16 +205,12 @@ header nav ul .nav-link:hover {
   text-shadow: 1px 1px 2px #000;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 926px) {
   header .flags-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 60px;
-  }
-  header .flags-container .flag-container {
-    width: 50px;
-    height: 50px;
   }
   header nav .hamburger {
     display: block;
@@ -223,10 +240,6 @@ header nav ul .nav-link:hover {
   }
   header .flags-container {
     gap: 30px;
-  }
-  header .flags-container .flag-container {
-    width: 50px;
-    height: 50px;
   }
   header nav .hamburger {
     display: block;
@@ -283,7 +296,7 @@ section#home-page .titles-container h2::after {
   animation: blinkingCursorAnimation 0.5s ease-in-out infinite;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 926px) {
   section#homePage {
     height: calc(100vh - 120px);
   }
@@ -299,7 +312,15 @@ section#home-page .titles-container h2::after {
     height: 1.5rem;
   }
 }
-@keyframes appImageAnimation {}
+section#projects .app-cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  width: 100%;
+  padding: 60px 0 60px 0;
+}
 section#projects .app-cards-container .app-card {
   position: relative;
   width: 360px;
@@ -384,6 +405,15 @@ section#projects .app-cards-container .app-card .app-details-container .app-deta
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 600px) {
+  section#projects .app-cards-container {
+    gap: 30px;
+    padding: 30px 0 30px 0;
+  }
+  section#projects .app-cards-container .app-card {
+    transform: scale(0.8);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

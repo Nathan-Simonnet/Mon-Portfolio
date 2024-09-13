@@ -23,7 +23,8 @@
     text-shadow: 1px 1px 2px $black-color;
     font-family: 'Jost', 'Montserrat';
     box-sizing: border-box;
-    border: 1px solid red;
+    // debug
+    // border: 1px solid red;
     color: white;
 }
 
@@ -35,12 +36,19 @@ html {
 body {
     background:url(/src/assets/images/background_black-desk.jpg) fixed;
     overflow-x: hidden;
-    // border: 2px solid orange;
 }
 
 #root{
-    margin-left:60px;
-    margin-right:60px;
+    // margin-left:60px;
+    // margin-right:60px;
+}
+
+section,header,footer{
+    padding:30px 60px 30px 60px;
+}
+
+section:not(#home-page),footer{
+    background:#000000bf;
 }
 
 a {
@@ -96,6 +104,22 @@ h6,p{
     font-size: 1rem;
 }
 
+.section-title{
+    position:relative;   
+}
+
+.section-title::after{
+    content: "";
+    color: white;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: $dark-red-color;
+    border-radius: 4px;
+}
+
 @include breakpoint(medium) {
 
     h1 {
@@ -120,6 +144,10 @@ h6,p{
     // h6,p{
     //     font-size: 1rem;
     // }
+
+    .section-title{
+        text-align:center;
+    }
 }
 
 @include breakpoint(small) {
