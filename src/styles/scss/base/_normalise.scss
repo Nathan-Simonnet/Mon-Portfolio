@@ -23,8 +23,7 @@
     text-shadow: 1px 1px 2px $black-color;
     font-family: 'Jost', 'Montserrat';
     box-sizing: border-box;
-    // debug
-    // border: 1px solid red;
+    border: 1px solid red;
     color: white;
 }
 
@@ -122,6 +121,23 @@ h6,p{
 
 @include breakpoint(medium) {
 
+    section{
+        padding:0;
+    }
+
+    .section-title::after{
+        content: "";
+        color: white;
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 60%;
+        background: $dark-red-color;
+        border-radius: 4px;
+    }
+
     h1 {
         font-size: 3rem;
     }
@@ -152,9 +168,9 @@ h6,p{
 
 @include breakpoint(small) {
 
-    #root{
-        margin-left:30px;
-        margin-right:30px;
+    section{
+
+        padding:0;
     }
 
     h1{

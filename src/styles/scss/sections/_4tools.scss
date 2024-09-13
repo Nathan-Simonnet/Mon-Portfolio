@@ -1,0 +1,128 @@
+
+section#tools{
+    .tools-container{
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        
+        padding:60px;
+        gap: 60px;
+
+       .specific-tools-container{
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        gap: 60px;
+        width: 100%;
+
+            .tools-title-container{
+                position:relative;
+                text-align:center;
+
+                .tools-title{
+                }
+            }
+
+            .tools-title-container::after{
+                    content: "";
+                    color: white;
+                    position: absolute;
+                    bottom: -8px;
+                    left: 0;
+                    height: 4px;
+                    width: 100%;
+                    background: $dark-red-color;
+                    border-radius: 4px;
+                }
+
+            .tools-logos-container{
+
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                flex-wrap: wrap;
+
+                column-gap: 120px;
+                row-gap: 60px;
+
+                .tools-logo-container{
+
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+
+                    .tools-logo{
+
+                        width: 100px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(medium) {
+    section#tools{
+        .tools-container{
+           .specific-tools-container{
+                .tools-title-container{
+                    .tools-title{
+                    }
+                }
+                .tools-title-container::after{
+                    }
+                .tools-logos-container{
+                    .tools-logo-container{
+                        .tools-logo{
+                            width: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(small) {
+    section#tools{
+        .tools-container{
+            padding-top:30px;
+            padding-bottom:30px;
+            padding-left: 0;
+            padding-right: 0;
+            gap: 30px;
+           .specific-tools-container{
+            row-gap: 30px;
+            column-gap: 2px;
+            
+            width: 100%;
+                .tools-title-container{
+                    .tools-title{
+                    }
+                }
+                .tools-title-container::after{
+                    }
+                .tools-logos-container{
+
+                    column-gap: 30px;
+                    row-gap: 30px;
+
+                    .tools-logo-container{
+                        .tools-logo{
+
+                            width: 60px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
