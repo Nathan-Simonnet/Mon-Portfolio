@@ -68,9 +68,11 @@ section#projects {
                     width: 100%;
 
                     .app-details-title {
-                        font-family: 'Montserrat';
+
+                        font-size: 1.4rem;
+                        font-family: 'Trebuchet MS';
                         color: black;
-                        font-weight: bolder;
+                        font-weight: bold;
                         text-shadow: none;
 
                     }
@@ -96,9 +98,9 @@ section#projects {
                         color: $black-color;
                         text-shadow: none;
                         font-weight: bold;
+
                     }
                 }
-
                 .app-details-logos-container {
                     display: flex;
                     justify-content: flex-start;
@@ -109,8 +111,6 @@ section#projects {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-
-                        .app-details-logo {}
                     }
                 }
             }

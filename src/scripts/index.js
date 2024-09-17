@@ -101,10 +101,17 @@ document.querySelector('.hamburger').addEventListener('click', function () {
 // // ===================================================================
 
 
+// // Contact
+// // ===============================================================
+// Btn
+// -------------------------------
 
-
-
-
+// Copy the mail, and change the content for 1s
+btnContact.addEventListener('click',(btn) => {
+    navigator.clipboard.writeText(btn.target.textContent);
+    lang == "fra" ? btn.target.textContent = "Copié !" : btn.target.textContent = "Copy !"
+    setTimeout(() => { btn.target.textContent = "nathan.simonnet@gmail.com" }, 1000);
+});
 
 
 

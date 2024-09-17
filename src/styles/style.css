@@ -242,7 +242,7 @@ header nav ul .nav-link {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8), -1px 1px 2px rgba(0, 0, 0, 0.8), 1px -1px 2px rgba(0, 0, 0, 0.8), -1px -1px 2px rgba(0, 0, 0, 0.8);
 }
 header nav ul .nav-link:hover {
-  color: #BB0E2E;
+  color: #ed2c4f;
   text-shadow: 1px 1px 2px #000;
 }
 
@@ -423,9 +423,10 @@ section#projects .app-cards-container .app-card .app-details-container .app-deta
   width: 100%;
 }
 section#projects .app-cards-container .app-card .app-details-container .app-details-title-and-github-container .app-details-title {
-  font-family: "Montserrat";
+  font-size: 1.4rem;
+  font-family: "Trebuchet MS";
   color: black;
-  font-weight: bolder;
+  font-weight: bold;
   text-shadow: none;
 }
 section#projects .app-cards-container .app-card .app-details-container .app-details-title-and-github-container .app-details-github-container {
@@ -457,6 +458,7 @@ section#projects .app-cards-container .app-card .app-details-container .app-deta
   justify-content: center;
   align-items: center;
 }
+
 @media (max-width: 926px) {
   section#projects .app-cards-container {
     gap: 30px;
@@ -597,8 +599,19 @@ section#profile .profile-container .profile-picture-container img {
   width: 260px;
   height: 310px;
 }
+section#profile .profile-container .profile-bio_and_cv-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
 section#profile .profile-container .profile-bio_and_cv-container .profile-bio-container p {
-  padding-bottom: 1rem;
+  font-size: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+section#profile .profile-container .profile-bio_and_cv-container .profile-bio-container p:last-child {
+  padding: 0;
 }
 section#profile .profile-container .profile-bio_and_cv-container .profile-cv-container .btn-cv {
   height: 40px;
@@ -621,6 +634,10 @@ section#profile .profile-container .profile-bio_and_cv-container .profile-cv-con
   section#profile .profile-container .profile-picture-container img {
     width: 220px;
     height: 260px;
+  }
+  section#profile .profile-container .profile-bio_and_cv-container {
+    align-items: center;
+    gap: 60px;
   }
   section#profile .profile-container .profile-bio_and_cv-container .profile-cv-container {
     text-align: center;
@@ -650,11 +667,14 @@ section#profile .profile-container .profile-bio_and_cv-container .profile-cv-con
   section#profile .profile-container .profile-bio_and_cv-container .profile-bio-container {
     padding-top: 1rem;
   }
+  section#profile .profile-container .profile-bio_and_cv-container .profile-bio-container p {
+    font-size: 1rem;
+  }
 }
 section#contact .contact-container {
   margin-top: 60px;
 }
-section#contact .contact-container #btn-contact {
+section#contact .contact-container .btn-contact {
   height: 50px;
   width: 240px;
 }

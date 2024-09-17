@@ -1,9 +1,8 @@
 section#profile {
-
     .section-title-container {
         margin-bottom: 60px;
-    }
 
+    }
     .profile-container {
         display: flex;
         justify-content: flex-start;
@@ -23,13 +22,21 @@ section#profile {
                 height: 310px;
             }
         }
-
         .profile-bio_and_cv-container {
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:flex-start;
 
+            gap: 1.25rem;
+            
             .profile-bio-container {
-
                 p {
-                    padding-bottom: 1rem;
+                    font-size: 1.25rem;
+                    padding-bottom: 1.25rem;
+                }
+                p:last-child{
+                    padding:0;
                 }
             }
 
@@ -44,11 +51,7 @@ section#profile {
 }
 
 @include breakpoint(medium) {
-
     section#profile {
-
-        .section-title-container {}
-
         .profile-container {
             display: flex;
             flex-direction: column;
@@ -67,17 +70,11 @@ section#profile {
                     height: 260px;
                 }
             }
-
             .profile-bio_and_cv-container {
-                .profile-bio-container {
-                    p {
-                        // font-size: ;
-                    }
-                }
-
+                align-items: center;
+                gap: 60px;
                 .profile-cv-container {
                     text-align:center;
-                    .btn-cv {}
                 }
             }
         }
@@ -86,13 +83,11 @@ section#profile {
 
 @include breakpoint(small) {
     section#profile {
-
         .section-title-container {
             margin-bottom: 30px;
+
         }
-
         .profile-container {
-
             gap: 30px;
 
             .profile-picture-container {
@@ -108,21 +103,14 @@ section#profile {
                     height: 200px;
                 }
             }
-
             .profile-bio_and_cv-container {
                 padding: 0;
 
                 .profile-bio-container {
                     padding-top: 1rem;
 
-                    p {
-                        // font-size: ;
-                    }
-                }
-
-                .profile-cv-container {
-                    .btn-cv {
-                        
+                    p{
+                        font-size: 1rem;
                     }
                 }
             }
