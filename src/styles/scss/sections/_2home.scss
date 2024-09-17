@@ -10,7 +10,7 @@
 
 section#home-page {
 
-  height: calc(100vh - 180px);
+  height: calc(100vh - 100px);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -55,7 +55,7 @@ section#home-page {
   section#home-page {
 
     height: calc(100vh - 120px);
-    padding-left: 30px;
+    padding-left: 60px;
 
     .titles-container {
 
@@ -71,7 +71,7 @@ section#home-page {
   section#home-page {
 
     height: calc(100vh - 120px);
-
+    padding-left: 30px;
     .titles-container {
 
       h2 {

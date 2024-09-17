@@ -17,7 +17,6 @@
   text-shadow: 1px 1px 2px #000;
   font-family: "Jost", "Montserrat";
   box-sizing: border-box;
-  border: 1px solid red;
   color: white;
 }
 
@@ -31,10 +30,12 @@ body {
   overflow-x: hidden;
 }
 
-section,
-header,
+section {
+  padding: 60px;
+}
+
 footer {
-  padding: 30px 60px 30px 60px;
+  padding: 30px;
 }
 
 section:not(#home-page),
@@ -99,10 +100,16 @@ p {
   font-size: 1rem;
 }
 
+hr {
+  height: 1px;
+  opacity: 0;
+}
+
 .btn {
   cursor: pointer;
   background: linear-gradient(135deg, rgba(160, 10, 37, 0.695), rgba(160, 10, 37, 0.364));
   border: 1px solid rgba(163, 21, 47, 0.422);
+  border-radius: 4px;
   transition: 0.3s;
 }
 
@@ -129,7 +136,7 @@ p {
 
 @media (max-width: 926px) {
   section {
-    padding: 60px 0 60px;
+    padding: 60px 0;
   }
   .section-title::after {
     content: "";
@@ -157,8 +164,9 @@ p {
   }
 }
 @media (max-width: 600px) {
-  section {
-    padding: 0;
+  section,
+  footer {
+    padding: 30px 0;
   }
   h1 {
     font-size: 2.25rem;
@@ -296,7 +304,7 @@ header nav ul .nav-link:hover {
   }
 }
 section#home-page {
-  height: calc(100vh - 180px);
+  height: calc(100vh - 100px);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -331,7 +339,7 @@ section#home-page .titles-container h2::after {
 @media (max-width: 926px) {
   section#home-page {
     height: calc(100vh - 120px);
-    padding-left: 30px;
+    padding-left: 60px;
   }
   section#home-page .titles-container h2 {
     height: 2.25rem;
@@ -340,6 +348,7 @@ section#home-page .titles-container h2::after {
 @media (max-width: 600px) {
   section#home-page {
     height: calc(100vh - 120px);
+    padding-left: 30px;
   }
   section#home-page .titles-container h2 {
     height: 1.5rem;
@@ -360,8 +369,8 @@ section#projects .app-cards-container {
   align-items: center;
   flex-wrap: wrap;
   gap: 60px;
-  width: 100%;
   padding: 60px 0 60px 0;
+  width: 100%;
 }
 section#projects .app-cards-container .app-card {
   position: relative;
@@ -450,13 +459,17 @@ section#projects .app-cards-container .app-card .app-details-container .app-deta
 }
 @media (max-width: 926px) {
   section#projects .app-cards-container {
-    gap: 0;
+    gap: 30px;
   }
   section#projects .app-cards-container .app-card {
     transform: scale(0.9);
   }
 }
 @media (max-width: 600px) {
+  section#projects .app-cards-container {
+    gap: 0;
+    padding: 0;
+  }
   section#projects .app-cards-container .app-card {
     transform: scale(0.8);
   }
@@ -468,7 +481,6 @@ section#tools .tools-container {
   align-items: center;
   margin-top: 60px;
   gap: 60px;
-  border: 1px solid orange;
 }
 section#tools .tools-container .specific-tools-container {
   display: flex;
@@ -503,23 +515,49 @@ section#tools .tools-container .specific-tools-container .tools-logos-container 
   padding: 0 30px 0 30px;
 }
 section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container .tools-logo-name {
+  user-select: none;
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  background: black;
+  border: 1px solid #BB0E2E;
+  border-radius: 10px;
+  transition: 0.3s;
+}
 section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container .tools-logo {
   width: 100px;
+}
+section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container:hover .tools-logo-name {
+  opacity: 1;
+  width: 120px;
+  padding: 12px;
 }
 
 @media (max-width: 926px) {
   section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container .tools-logo {
     width: 80px;
   }
+  section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container:hover .tools-logo-name {
+    opacity: 1;
+    width: 90px;
+    padding: 12px;
+  }
 }
 @media (max-width: 600px) {
   section#tools .tools-container {
-    padding-left: 0;
-    padding-right: 0;
+    margin-top: 30px;
     gap: 30px;
   }
   section#tools .tools-container .specific-tools-container {
@@ -533,6 +571,9 @@ section#tools .tools-container .specific-tools-container .tools-logos-container 
   }
   section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container .tools-logo {
     width: 60px;
+  }
+  section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container:hover .tools-logo-name {
+    width: 90px;
   }
 }
 section#profile .section-title-container {
@@ -623,6 +664,11 @@ section#contact .contact-container #btn-contact {
     text-align: center;
   }
 }
+@media (max-width: 600px) {
+  section#contact .contact-container {
+    margin-top: 30px;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -636,13 +682,27 @@ footer .footer-links-container {
   align-items: center;
   gap: 40px;
 }
+footer .footer-links-container .footer-link-container {
+  width: 40px;
+}
 footer .footer-links-container .footer-link-container .footer-link {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+footer .footer-links-container .footer-link-container .footer-link .footer-link-img {
+  width: 100%;
+}
 footer .footer-links-container .footer-link-container .footer-link .footer-link-img:hover {
   transform: scale(1.1);
+}
+@media (max-width: 600px) {
+  footer .footer-links-container {
+    gap: 35px;
+  }
+  footer .footer-links-container .footer-link-container {
+    width: 35px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

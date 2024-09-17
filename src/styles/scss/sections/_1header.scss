@@ -143,9 +143,6 @@ header {
 
 @include breakpoint(small) {
     header {
-        // margin-top: 30px;
-        // margin-bottom: 30px;
-
         padding:30px;
 
         .flags-container {

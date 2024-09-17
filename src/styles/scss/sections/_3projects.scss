@@ -1,15 +1,13 @@
 section#projects {
 
-    .section-title-container {}
-
     .app-cards-container {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         gap: 60px;
-        width: 100%;
         padding: 60px 0 60px 0;
+        width: 100%;
 
         .app-card {
             position: relative;
@@ -19,12 +17,15 @@ section#projects {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
                 width: 360px;
                 height: 250px;
+
                 border-top-left-radius: 10px;
                 border-top-right-radius: 10px;
                 background: #E4E4E4;
                 cursor: alias;
+                
                 transition: 0.6s;
 
                 .app-img {
@@ -39,7 +40,6 @@ section#projects {
                     transition: 0.3s;
                 }
             }
-
             .app-img-container:hover {
                 .app-img {
                     width: 95%;
@@ -47,9 +47,9 @@ section#projects {
                     border-bottom-left-radius: 10px;
                     border-bottom-right-radius: 10px;
                     transition: 0.6s ease-out;
+
                 }
             }
-
             .app-details-container {
                 display: flex;
                 flex-direction: column;
@@ -72,8 +72,8 @@ section#projects {
                         color: black;
                         font-weight: bolder;
                         text-shadow: none;
-                    }
 
+                    }
                     .app-details-github-container {
                         width: 30px;
                         transition: 0.1s;
@@ -86,7 +86,6 @@ section#projects {
                             }
                         }
                     }
-
                     .app-details-github-container:hover {
                         transform: scale(1.1);
                     }
@@ -123,21 +122,22 @@ section#projects {
 
     section#projects {
         .app-cards-container {
-            gap: 0;
-            // padding: 0;
+            gap: 30px;
 
             .app-card {
                 transform: scale(0.9);
             }
         }
     }
-
 }
 
 @include breakpoint(small) {
 
     section#projects {
         .app-cards-container {
+            gap: 0;
+            padding: 0;
+
             .app-card {
                 transform: scale(0.8);
             }
