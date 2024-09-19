@@ -16,7 +16,6 @@
   color: #fff;
   font-family: "Jost", "Montserrat";
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 html {
@@ -423,15 +422,55 @@ section#projects .app-cards-container .app-card .app-img-container:hover .app-im
   transition: 0.6s ease-out;
 }
 section#projects .app-cards-container .app-card .app-details-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #E4E4E4;
+}
+section#projects .app-cards-container .app-card .app-details-container .app-hidden-details-container {
+  z-index: -1;
+  opacity: 0;
+  transform: translateY(100%);
+  position: absolute;
+  top: -251px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 6px;
+  height: 250px;
+  width: 100%;
   padding: 12px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background: #E4E4E4;
+  background: rgba(0, 0, 0, 0.9098039216);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: 0.3s ease-out;
+}
+section#projects .app-cards-container .app-card .app-details-container .app-hidden-details-container p {
+  color: white;
+  text-shadow: none;
+  font-weight: bold;
+}
+section#projects .app-cards-container .app-card .app-details-container .app-hidden-details-container.visible {
+  z-index: 1;
+  opacity: 1;
+  transform: translateY(0);
+}
+section#projects .app-cards-container .app-card .app-details-container i {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: black;
+  transition: 0.3s linear;
+}
+section#projects .app-cards-container .app-card .app-details-container i.rotated {
+  transform: rotate(180deg);
 }
 section#projects .app-cards-container .app-card .app-details-container .app-details-title-and-github-container {
   display: flex;
@@ -455,6 +494,9 @@ section#projects .app-cards-container .app-card .app-details-container .app-deta
   transition: 0.1s;
 }
 section#projects .app-cards-container .app-card .app-details-container .app-details-title-and-github-container .app-details-github-container .app-details-github-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: alias;
 }
 section#projects .app-cards-container .app-card .app-details-container .app-details-title-and-github-container .app-details-github-container .app-details-github-link .app-details-github-img {
@@ -473,6 +515,7 @@ section#projects .app-cards-container .app-card .app-details-container .app-deta
   text-shadow: none;
 }
 section#projects .app-cards-container .app-card .app-details-container .app-details-logos-container {
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;

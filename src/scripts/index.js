@@ -26,7 +26,7 @@ function textInjection() {
         "en": "Web developer"
     }
     const textToAnim = devWebArray[lang];
-    let currentLang =lang;
+    let currentLang = lang;
 
     letterInjection()
     function letterInjection() {
@@ -47,7 +47,7 @@ textInjection()
 // Flags
 // ----------------
 document.querySelectorAll('.flag-container').forEach((flag) => {
-    
+
     flag.addEventListener('click', (e) => {
 
         if (!flag.classList.contains("current-language")) {
@@ -66,18 +66,18 @@ document.querySelectorAll('.flag-container').forEach((flag) => {
                 translatePage(lang)
 
                 // Prevent a glitch from the widget on the second time translating en english
-                if(lang == "en" && firstLoadOnPage == true){
+                if (lang == "en" && firstLoadOnPage == true) {
                     translatePage(lang);
                     firstLoadOnPage = true;
                 }
-            },200)
+            }, 200)
             console.log(lang)
         }
     });
 
     // Execute the div click event for keyboard user
     flag.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') {e.target.click();}
+        if (e.key === 'Enter') { e.target.click(); }
     });
 });
 
@@ -116,7 +116,7 @@ document.querySelector('.hamburger').addEventListener('click', function () {
 // -------------------------------
 
 // Copy the mail, and change the content for 1s
-btnContact.addEventListener('click',(btn) => {
+btnContact.addEventListener('click', (btn) => {
     navigator.clipboard.writeText(btn.target.textContent);
     lang == "fra" ? btn.target.textContent = "Copié !" : btn.target.textContent = "Copy !"
     setTimeout(() => { btn.target.textContent = "nathan.simonnet@gmail.com" }, 1000);
@@ -136,6 +136,20 @@ const urlLang = urlParams.get('lang');
 if (urlLang) {
     console.log(`The 'urlLang' parameter is: ${urlLang}`);
 } else {
-  console.log("'urlLang' parameter not found in the URL");
+    console.log("'urlLang' parameter not found in the URL");
 }
 
+// //Arrow
+// // ===============================
+
+document.querySelectorAll('.app-details-arrow').forEach((arrow) => {
+
+    arrow.addEventListener('click', () => {
+        arrow.classList.toggle('rotated');
+        arrow.previousElementSibling.classList.toggle('visible')
+    });
+
+    arrow.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') { e.target.click(); }
+    });
+});
