@@ -14,10 +14,9 @@
   padding: 0;
   margin: 0;
   color: #fff;
-  text-shadow: 1px 1px 2px #000;
   font-family: "Jost", "Montserrat";
   box-sizing: border-box;
-  color: white;
+  border: 1px solid red;
 }
 
 html {
@@ -26,8 +25,17 @@ html {
 }
 
 body {
+  top: 0 !important;
   background: url(/src/assets/images/background_black-desk.jpg) fixed;
   overflow-x: hidden;
+}
+
+#google_translate_element {
+  display: none;
+}
+
+.skiptranslate {
+  display: none;
 }
 
 section {
@@ -190,7 +198,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 60px 30px 60px;
+  padding: 60px 60px 0px 60px;
 }
 header .flags-container {
   display: flex;
@@ -241,7 +249,16 @@ header nav ul .nav-link {
   font-weight: 600;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8), -1px 1px 2px rgba(0, 0, 0, 0.8), 1px -1px 2px rgba(0, 0, 0, 0.8), -1px -1px 2px rgba(0, 0, 0, 0.8);
 }
+header nav ul .nav-link font {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8), -1px 1px 2px rgba(0, 0, 0, 0.8), 1px -1px 2px rgba(0, 0, 0, 0.8), -1px -1px 2px rgba(0, 0, 0, 0.8);
+}
 header nav ul .nav-link:hover {
+  color: #ed2c4f;
+  text-shadow: 1px 1px 2px #000;
+}
+header nav ul .nav-link:hover font:hover {
   color: #ed2c4f;
   text-shadow: 1px 1px 2px #000;
 }
@@ -264,7 +281,7 @@ header nav ul .nav-link:hover {
     justify-content: center;
     align-items: center;
     right: 60px;
-    top: 90px;
+    top: 120px;
   }
   header nav ul.open {
     opacity: 1;
@@ -429,6 +446,10 @@ section#projects .app-cards-container .app-card .app-details-container .app-deta
   font-weight: bold;
   text-shadow: none;
 }
+section#projects .app-cards-container .app-card .app-details-container .app-details-title-and-github-container .app-details-title font {
+  color: black;
+  text-shadow: none;
+}
 section#projects .app-cards-container .app-card .app-details-container .app-details-title-and-github-container .app-details-github-container {
   width: 30px;
   transition: 0.1s;
@@ -443,9 +464,13 @@ section#projects .app-cards-container .app-card .app-details-container .app-deta
   transform: scale(1.1);
 }
 section#projects .app-cards-container .app-card .app-details-container .app-details-paragraph-container p {
-  color: #000;
+  color: black;
   text-shadow: none;
   font-weight: bold;
+}
+section#projects .app-cards-container .app-card .app-details-container .app-details-paragraph-container p font {
+  color: black;
+  text-shadow: none;
 }
 section#projects .app-cards-container .app-card .app-details-container .app-details-logos-container {
   display: flex;
@@ -539,7 +564,7 @@ section#tools .tools-container .specific-tools-container .tools-logos-container 
   transition: 0.3s;
 }
 section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container .tools-logo {
-  width: 100px;
+  width: 80px;
 }
 section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container:hover .tools-logo-name {
   opacity: 1;
@@ -548,8 +573,13 @@ section#tools .tools-container .specific-tools-container .tools-logos-container 
 }
 
 @media (max-width: 926px) {
+  section#tools .tools-container .specific-tools-container .tools-logos-container {
+    column-gap: 70px;
+    row-gap: 70px;
+    padding: 0 30px 0 30px;
+  }
   section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container .tools-logo {
-    width: 80px;
+    width: 70px;
   }
   section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container:hover .tools-logo-name {
     opacity: 1;
@@ -564,7 +594,6 @@ section#tools .tools-container .specific-tools-container .tools-logos-container 
   }
   section#tools .tools-container .specific-tools-container {
     row-gap: 30px;
-    column-gap: 2px;
     width: 100%;
   }
   section#tools .tools-container .specific-tools-container .tools-logos-container {
@@ -572,10 +601,11 @@ section#tools .tools-container .specific-tools-container .tools-logos-container 
     row-gap: 30px;
   }
   section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container .tools-logo {
-    width: 60px;
+    width: 50px;
   }
   section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container:hover .tools-logo-name {
     width: 90px;
+    font-size: 0.8rem;
   }
 }
 section#profile .section-title-container {
@@ -663,6 +693,7 @@ section#profile .profile-container .profile-bio_and_cv-container .profile-cv-con
   }
   section#profile .profile-container .profile-bio_and_cv-container {
     padding: 0;
+    gap: 30px;
   }
   section#profile .profile-container .profile-bio_and_cv-container .profile-bio-container {
     padding-top: 1rem;

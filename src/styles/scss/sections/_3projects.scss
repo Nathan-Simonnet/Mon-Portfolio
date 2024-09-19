@@ -47,7 +47,6 @@ section#projects {
                     border-bottom-left-radius: 10px;
                     border-bottom-right-radius: 10px;
                     transition: 0.6s ease-out;
-
                 }
             }
             .app-details-container {
@@ -75,6 +74,10 @@ section#projects {
                         font-weight: bold;
                         text-shadow: none;
 
+                        font{
+                            color: black;
+                            text-shadow: none;
+                        }
                     }
                     .app-details-github-container {
                         width: 30px;
@@ -95,10 +98,14 @@ section#projects {
 
                 .app-details-paragraph-container {
                     p {
-                        color: $black-color;
+                        color: black;
                         text-shadow: none;
                         font-weight: bold;
 
+                        font{
+                            color: black;
+                            text-shadow: none;
+                        }
                     }
                 }
                 .app-details-logos-container {
@@ -119,7 +126,6 @@ section#projects {
 }
 
 @include breakpoint(medium) {
-
     section#projects {
         .app-cards-container {
             gap: 30px;
@@ -132,7 +138,6 @@ section#projects {
 }
 
 @include breakpoint(small) {
-
     section#projects {
         .app-cards-container {
             gap: 0;

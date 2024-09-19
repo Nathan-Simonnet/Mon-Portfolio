@@ -1,5 +1,15 @@
 
-let lang = "fra";
+let lang = "fr";
+let firstLoadOnPage = true;
+
+// // Translation
+// // ========================================================
+function translatePage(lang) {
+    const inputSelect = document.querySelector('.goog-te-combo');
+    inputSelect.value = lang;
+    const event = new Event('change')
+    inputSelect.dispatchEvent(event);
+}
 
 // //Home page
 // ============================================================
@@ -12,8 +22,8 @@ function textInjection() {
     let letterCounter = 0;
 
     const devWebArray = {
-        "fra": "Développeur web",
-        "eng": "Web developer"
+        "fr": "Développeur web",
+        "en": "Web developer"
     }
     const textToAnim = devWebArray[lang];
     let currentLang =lang;
@@ -48,9 +58,18 @@ document.querySelectorAll('.flag-container').forEach((flag) => {
             // Add class current-language 
             flag.classList.add(("current-language"));
             lang = flag.dataset.lang;
-            // Launch the text animation (web dev)
+
             setTimeout(() => {
+                // Launch the text animation (web dev)
                 textInjection();
+                // Launch the automatic translation
+                translatePage(lang)
+
+                // Prevent a glitch from the widget on the second time translating en english
+                if(lang == "en" && firstLoadOnPage == true){
+                    translatePage(lang);
+                    firstLoadOnPage = true;
+                }
             },200)
             console.log(lang)
         }
@@ -87,16 +106,6 @@ document.querySelector('.hamburger').addEventListener('click', function () {
 
 });
 
-//    // Prevent hamburger alteration for keyboard users
-//    document.addEventListener('keydown', function (event) {
-//     const ul = document.querySelector('header>nav>ul');
-//     if (event.key === 'Enter' && ul.classList.contains("open")) {
-//         ul.classList.remove("open");
-//         document.querySelector('.hamburger').classList.remove('is-active');
-//         console.log(ul.classList.contains("open"))
-//     }
-// });
-
 // // Projects
 // // ===================================================================
 
@@ -115,6 +124,18 @@ btnContact.addEventListener('click',(btn) => {
 
 
 
+// //
 
+// Get the current URL
+const urlParams = new URLSearchParams(window.location.search);
 
+// Get the 'urlLang' query parameter
+const urlLang = urlParams.get('lang');
+
+// Check if 'urlLang' exists and log it
+if (urlLang) {
+    console.log(`The 'urlLang' parameter is: ${urlLang}`);
+} else {
+  console.log("'urlLang' parameter not found in the URL");
+}
 

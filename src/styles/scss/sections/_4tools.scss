@@ -1,91 +1,88 @@
+section#tools {
+    .tools-container {
 
-section#tools{
-    .tools-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        
-       margin-top: 60px;
+        margin-top: 60px;
         gap: 60px;
 
-       .specific-tools-container{
+        .specific-tools-container {
 
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-        gap: 60px;
-        width: 100%;
+            gap: 60px;
+            width: 100%;
 
-            .tools-title-container{
-                position:relative;
-                text-align:center;
+            .tools-title-container {
+                position: relative;
+                text-align: center;
 
             }
-            .tools-title-container::after{
-                    content: "";
-                    color: white;
-                    position: absolute;
-                    bottom: -8px;
-                    left: 0;
-                    height: 4px;
-                    width: 100%;
-                    background: $dark-red-color;
-                    border-radius: 4px;
-                }
+            .tools-title-container::after {
+                content: "";
+                color: white;
+                position: absolute;
+                bottom: -8px;
+                left: 0;
+                height: 4px;
+                width: 100%;
+                background: $dark-red-color;
+                border-radius: 4px;
 
-            .tools-logos-container{
-
-                display:flex;
-                justify-content:center;
-                align-items:center;
+            }
+            .tools-logos-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 flex-wrap: wrap;
 
                 column-gap: 120px;
                 row-gap: 60px;
-                padding:0 30px 0 30px;
+                padding: 0 30px 0 30px;
 
-                .tools-logo-container{
-                    position:relative;
+                .tools-logo-container {
+                    position: relative;
 
-                    display:flex;
-                    justify-content:center;
-                    align-items:center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
-                    .tools-logo-name{
-
+                    .tools-logo-name {
                         user-select: none;
 
                         opacity: 0;
-                        position:absolute;
+                        position: absolute;
 
-                        display:flex;
-                        justify-content:center;
-                        align-items:center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
 
                         width: 0;
-                        padding:0;
+                        padding: 0;
                         font-weight: bold;
                         font-size: 1rem;
-                        background:black;
+                        background: black;
                         border: 1px solid $dark-red-color;
-                        border-radius:10px;
+                        border-radius: 10px;
 
                         transition: 0.3s;
 
                     }
-                    .tools-logo{
-                        width: 100px;        
+                    .tools-logo {
+                        width: 80px;
                     }
                 }
-                .tools-logo-container:hover{
-                    .tools-logo-name{
+                .tools-logo-container:hover {
+                    .tools-logo-name {
                         opacity: 1;
-                      width: 120px;
-                      padding:12px;
+                        width: 120px;
+                        padding: 12px;
 
                     }
                 }
@@ -95,53 +92,24 @@ section#tools{
 }
 
 @include breakpoint(medium) {
-    section#tools{
-        .tools-container{
-           .specific-tools-container{
-                .tools-logos-container{
-                    .tools-logo-container{
-                        .tools-logo{
-                            width: 80px;
-
+    section#tools {
+        .tools-container {
+            .specific-tools-container {
+                .tools-logos-container {
+                    column-gap: 70px;
+                    row-gap: 70px;
+                    padding: 0 30px 0 30px;
+        
+                    .tools-logo-container {
+                        .tools-logo {
+                            width: 70px;
                         }
                     }
-                    .tools-logo-container:hover{
-                        .tools-logo-name{
+                    .tools-logo-container:hover {
+                        .tools-logo-name {
                             opacity: 1;
-                          width: 90px;
-                          padding:12px;
-                        }
-                    }
-                }  
-            }
-        }
-    }
-}
-
-@include breakpoint(small) {
-    section#tools{
-        .tools-container{
-            margin-top: 30px;
-            gap: 30px;
-
-           .specific-tools-container{
-            row-gap: 30px;
-            column-gap: 2px;
-            
-            width: 100%;
-
-                .tools-logos-container{
-                    column-gap: 30px;
-                    row-gap: 30px;
-
-                    .tools-logo-container{
-                        .tools-logo{
-                            width: 60px;
-                        }
-                    }
-                    .tools-logo-container:hover{
-                        .tools-logo-name{
                             width: 90px;
+                            padding: 12px;
                         }
                     }
                 }
@@ -150,3 +118,34 @@ section#tools{
     }
 }
 
+@include breakpoint(small) {
+    section#tools {
+        .tools-container {
+            margin-top: 30px;
+            gap: 30px;
+
+            .specific-tools-container {
+                row-gap: 30px;
+                width: 100%;
+
+                .tools-logos-container {
+                    column-gap: 30px;
+                    row-gap: 30px;
+
+                    .tools-logo-container {
+                        .tools-logo {
+                            width: 50px;
+                        }
+                    }
+
+                    .tools-logo-container:hover {
+                        .tools-logo-name {
+                            width: 90px;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
