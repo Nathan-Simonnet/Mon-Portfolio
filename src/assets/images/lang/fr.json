@@ -36,7 +36,7 @@
                 ],
                 "hiddenDetails": [
                     "Un bon entrainement à la gestion des routes en React.",
-                    "Et maintenant, je sais que faire suivre une variable entre elle n'est pas si simple (le score en l'occurrence)."
+                    "Et maintenant, je sais que faire suivre une variable entre les différentes page demande une certaine prudence (le score en l'occurrence)"
                 ]
             },
             "meal_fetcher": {
