@@ -78,7 +78,7 @@ section#tools {
                         width: 80px;
                     }
                 }
-                .tools-logo-container:hover {
+                .tools-logo-container:hover , .tools-logo-container:focus {
                     .tools-logo-name {
                         opacity: 1;
                         width: 120px;

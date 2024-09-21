@@ -1,15 +1,95 @@
 
 let lang = "fr";
-let firstLoadOnPage = true;
 
 // // Translation
 // // ========================================================
-function translatePage(lang) {
-    const inputSelect = document.querySelector('.goog-te-combo');
-    inputSelect.value = lang;
-    const event = new Event('change')
-    inputSelect.dispatchEvent(event);
+function translatePage(datas) {
+    // Logos more than one section
+    for (const key in datas.logos) {
+        document.querySelectorAll('.' + key + '-logo').forEach((logo) => {
+            logo.alt = datas.logos[key];
+        });
+    };
+
+    // Flags
+    document.getElementById('flag-france').alt = datas.header.flags.fr.alt;
+    document.getElementById('flag-france').setAttribute('aria-label', datas.header.flags.fr.aria);
+
+    document.getElementById('flag-UK').alt = datas.header.flags.en.alt;
+    document.getElementById('flag-UK').setAttribute('aria-label', datas.header.flags.en.aria);
+
+    // Nav
+    let navLinksIndex = 0;
+    document.querySelectorAll('.nav-link').forEach((link) => {
+        link.textContent = datas.header.nav[navLinksIndex];
+        navLinksIndex++;
+    });
+
+    // Project
+    document.getElementById('project-title').textContent = datas.projects.title;
+
+    function translateProject(projectToTranslate) {
+        document.getElementById(projectToTranslate + '-img').alt = datas.projects.cards[projectToTranslate].alt;
+
+        document.getElementById(projectToTranslate + '-details-paragraph-container').children[0].textContent = datas.projects.cards[projectToTranslate].details[0];
+        document.getElementById(projectToTranslate + '-details-paragraph-container').children[1].textContent = datas.projects.cards[projectToTranslate].details[1];
+
+        for (let i = 0; i < datas.projects.cards[projectToTranslate].hiddenDetails.length; i++) {
+            document.getElementById(projectToTranslate + '-hidden-details-container').children[i].textContent = datas.projects.cards[projectToTranslate].hiddenDetails[i];
+        }
+    }
+
+    document.querySelectorAll('.app-card').forEach((project) => {
+        const projectName = project.dataset.projectnamedata;
+        translateProject(projectName);
+    });
+
+
+    // Tools
+    document.getElementById('section-tools-title').textContent = datas.tools.title;
+    document.getElementById('dev_tools-title').textContent = datas.tools.dev_tools.title;
+    document.getElementById('other_tools-title').textContent = datas.tools.other_tools.title;
+
+    for (let key in datas.tools.other_tools.logos) {
+        document.querySelector('.' + key + '-logo').alt = datas.tools.other_tools.logos[key];
+    }
+
+    // Profile
+    document.getElementById('section-profile-title').textContent = datas.profile.title;
+    document.getElementById('profile-picture').alt = datas.profile.img;
+    const profileBioContainer = document.querySelector('.profile-bio-container')
+
+    for (let i = 0; i < datas.profile.bio.length; i++) {
+        profileBioContainer.children[i].textContent = datas.profile.bio[i];
+    }
+
+    document.getElementById('btnCv').textContent = datas.profile.cv;
+    document.querySelector('.facebook-logo').alt = datas.profile.facebook;
+
+    // Contact
+    document.getElementById('section-contact-title').textContent = datas.contact.title;
+    document.querySelector('.linkedin-logo').alt = datas.contact.linkedin;
+
+    // Footer
+    document.querySelector('.footer-last_update').textContent = datas.footer;
+
 }
+
+function langJsonFecther() {
+    fetch('/src/assets/lang/' + lang + '.json')
+        .then((response) => response.json())
+        .then((data) => translatePage(data))
+        .catch((error) => console.log(error))
+}
+
+// Google translate widget 
+// function translatePage(lang) {
+//     const inputSelect = document.querySelector('.goog-te-combo');
+//     inputSelect.value = lang;
+//     const event = new Event('change')
+//     inputSelect.dispatchEvent(event);
+// }
+
 
 // //Home page
 // ============================================================
@@ -42,6 +122,38 @@ function textInjection() {
 
 textInjection()
 
+
+// Get the current URL
+const urlParams = new URLSearchParams(window.location.search);
+
+// Get the 'urlLang' query parameter
+const urlLang = urlParams.get('lang');
+if (urlLang == "fr") {
+    setTimeout(() => {
+        alert("fr!!!!!")
+    }, 2000)
+}
+// // Check if 'urlLang' exists and log it
+// if (urlLang == "en") {
+//     document.querySelectorAll('.flag-container').forEach((flagToTrim) => {
+//         flagToTrim.classList.remove("current-language");
+//     });
+//     // Add class current-language 
+//    const currentFlage = document.getElementById('flag-UK')
+//    currentFlage.classList.add(("current-language"));
+//     lang = currentFlage.dataset.lang;
+
+//     setTimeout(() => {
+//         // Launch the automatic translation
+//         langJsonFecther()
+
+//         // Launch the text animation (web dev)
+//         textInjection();
+
+//     }, 200)
+//     console.log(lang)
+// }
+
 // // Header
 // ==================================================================
 // Flags
@@ -60,16 +172,18 @@ document.querySelectorAll('.flag-container').forEach((flag) => {
             lang = flag.dataset.lang;
 
             setTimeout(() => {
+                // Launch the automatic translation
+                langJsonFecther()
+
                 // Launch the text animation (web dev)
                 textInjection();
-                // Launch the automatic translation
-                translatePage(lang)
 
-                // Prevent a glitch from the widget on the second time translating en english
-                if (lang == "en" && firstLoadOnPage == true) {
-                    translatePage(lang);
-                    firstLoadOnPage = true;
-                }
+                // // Prevent a glitch from the widget on the second time translating en english
+                // if (lang == "en" && firstLoadOnPage == true) {
+                //     translatePage(lang);
+                //     firstLoadOnPage = true;
+                // }
+
             }, 200)
             console.log(lang)
         }
@@ -121,23 +235,6 @@ btnContact.addEventListener('click', (btn) => {
     lang == "fra" ? btn.target.textContent = "Copié !" : btn.target.textContent = "Copy !"
     setTimeout(() => { btn.target.textContent = "nathan.simonnet@gmail.com" }, 1000);
 });
-
-
-
-// //
-
-// Get the current URL
-const urlParams = new URLSearchParams(window.location.search);
-
-// Get the 'urlLang' query parameter
-const urlLang = urlParams.get('lang');
-
-// Check if 'urlLang' exists and log it
-if (urlLang) {
-    console.log(`The 'urlLang' parameter is: ${urlLang}`);
-} else {
-    console.log("'urlLang' parameter not found in the URL");
-}
 
 // //Arrow
 // // ===============================

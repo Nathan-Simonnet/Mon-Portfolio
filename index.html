@@ -32,8 +32,8 @@
         <script type="text/javascript"
             src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         -->
-       
-            <!--/ Google translate widget /-->
+
+        <!--/ Google translate widget /-->
 
 
         <header>
@@ -82,13 +82,13 @@
             </div>
 
             <div class="app-cards-container">
-                <div class="card app-card app-card-kasa">
+                <div data-projectnamedata="kasa" class="card app-card kasa-card">
                     <a class="app-img-container" href="https://main--kasa-rent.netlify.app/" target="_blank">
                         <img src="/src/assets/images/app/360W/app_kasa_360W.webp" alt="Image du site Kasa"
-                            class="app-img">
+                            class="app-img" id="kasa-img">
                     </a>
                     <div class="app-details-container">
-                        <div class="app-hidden-details-container">
+                        <div class="app-hidden-details-container" id="kasa-hidden-details-container">
                             <p> Ce projet m'a permis de découvrir que React à un langage et un fonctionnement propre,
                                 qu'il a fallu apprendre.</p>
                             <p> Cependant, l'aspect modulaire, une fois que l'on sait s'organiser, permet une meilleure
@@ -97,94 +97,100 @@
                         <i class="fa-solid fa-angle-down app-details-arrow" tabindex="0"></i>
 
                         <div class="app-details-title-and-github-container">
-                            <p class="app-details-title" translate="no" id="app-kasa">
+                            <p class="app-details-title" translate="no">
                                 Kasa
                             </p>
                             <div class="app-details-github-container">
                                 <a href="https://github.com/Nathan-Simonnet/Kasa" target="_blank"
                                     class="app-details-github-link">
                                     <img src="/src/assets/images/Links/logo_github_40px.webp"
-                                        class="app-details-github-img" alt="Logo github" width="40px">
+                                        class="app-details-github-img logo-github github-logo" alt="Logo github"
+                                        width="40px">
                                 </a>
                             </div>
                         </div>
-                        <div class="app-details-paragraph-container" id="paragraph-kasa">
+                        <div class="app-details-paragraph-container" id="kasa-details-paragraph-container">
                             <p>Site de location d'appartements :</p>
                             <p>React router, links, navigation, gestion des id / erreurs, redirections...</p>
                         </div>
                         <div class="app-details-logos-container">
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_react_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de React">
+                                    class="app-details-logo react-logo" alt="Logo de React">
                             </div>
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_js_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de Javascript">
+                                    class="app-details-logo javascript-logo" alt="Logo de Javascript">
                             </div>
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_css_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de CSS">
+                                    class="app-details-logo css-logo" alt="Logo de CSS">
                             </div>
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_sass_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de SASS">
+                                    class="app-details-logo sass-logo " alt="Logo de SASS">
+                            </div>
+                            <div class="app-details-logo-container">
+                                <img src="/src/assets/images/Tecnhos/40px/logo_json_40px.webp" width="40px"
+                                    class="app-details-logo json-logo" alt="Logo représentant un fichier JSON">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="card app-card app-card-quiz">
+                <div data-projectnamedata="quiz" class="card app-card quiz-card">
                     <a class="app-img-container" href="http://www.quiz-js.rf.gd/?i=2" target="_blank">
                         <img src="/src/assets/images/app/360W/app_quiz_360px.webp" alt="Image du site quiz"
-                            class="app-img">
+                            class="app-img" id="quiz-img">
                     </a>
 
                     <div class="app-details-container">
-                        <div class="app-hidden-details-container">
+                        <div class="app-hidden-details-container" id="quiz-hidden-details-container">
                             <p>Un bon entrainement à la gestion des routes en React.</p>
-                            <p>Et maintenant, je sais que faire suivre une variable entre les différentes page demande une certaine prudence (le
+                            <p>Et maintenant, je sais que faire suivre une variable entre les différentes page demande
+                                une certaine prudence (le
                                 score en l'occurrence).</p>
                         </div>
                         <i class="fa-solid fa-angle-down app-details-arrow" tabindex="0"></i>
 
                         <div class="app-details-title-and-github-container">
-                            <p class="app-details-title" translate="no" id="app-quiz">
+                            <p class="app-details-title" translate="no">
                                 Quiz
                             </p>
                             <div class="app-details-github-container">
                                 <a href="https://github.com/Nathan-Simonnet/Mini_quizz" target="_blank"
                                     class="app-details-github-link">
                                     <img src="/src/assets/images/Links/logo_github_40px.webp"
-                                        class="app-details-github-img" alt="Logo github" width="40px">
+                                        class="app-details-github-img github-logo" alt="Logo github" width="40px">
                                 </a>
                             </div>
                         </div>
-                        <div class="app-details-paragraph-container" id="paragraph-quiz">
+                        <div class="app-details-paragraph-container" id="quiz-details-paragraph-container">
                             <p>Quiz personnalisable :</p>
-                            <p>React router, links, navigation, gestion des réponses et du score..</p>
+                            <p>React router, links, navigation, gestion des réponses et du score...</p>
                         </div>
                         <div class="app-details-logos-container">
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_react_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de React">
+                                    class="app-details-logo react-logo" alt="Logo de React">
                             </div>
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_js_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de Javascript">
+                                    class="app-details-logo javascript-logo" alt="Logo de Javascript">
                             </div>
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_css_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de CSS">
+                                    class="app-details-logo css-logo" alt="Logo de CSS">
                             </div>
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_json_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de JSON">
+                                    class="app-details-logo json-logo" alt="Logo représentant un fichier JSON">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- <div class="card app-card app-card-architect">
+                <!-- <div data-projectnamedata="kasa" class="card app-card app-card-architect">
                     <a class="app-img-container" href="" target="_blank">
                         <img src="/src/assets/images/app/360W/app_architect_360px.webp" alt="Image du site architect"
                             class="app-img">
@@ -206,7 +212,7 @@
                                 <a href="https://github.com/Nathan-Simonnet/Portfolio-architecte_sophie_bluel"
                                     target="_blank" class="app-details-github-link">
                                     <img src="/src/assets/images/Links/logo_github_40px.webp"
-                                        class="app-details-github-img" alt="Logo github" width="40px">
+                                        class="app-details-github-img github-logo" alt="Logo github" width="40px">
                                 </a>
                             </div>
                         </div>
@@ -221,28 +227,28 @@
                             </div>
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_api_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo API">
+                                    class="app-details-logo logo-api" alt="Logo API">
                             </div>
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_js_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de Javascript">
+                                    class="app-details-logo javascript-logo" alt="Logo de Javascript">
                             </div>
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_css_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de CSS">
+                                    class="app-details-logo css-logo" alt="Logo de CSS">
                             </div>
                         </div>
                     </div>
                 </div> -->
 
-                <div class="card app-card app-card-meal_fetcher">
+                <div data-projectnamedata="mealFetcher" class="card app-card meal_fetcher-card">
                     <a class="app-img-container" href="https://fetch-my-meal.000webhostapp.com/" target="_blank">
                         <img src="/src/assets/images/app/360W/app_meal-fetcher_360px.webp"
-                            alt="Image du site meal_fetcher" class="app-img">
+                            alt="Image du site meal fetcher" id="mealFetcher-img" class="app-img">
                     </a>
 
                     <div class="app-details-container">
-                        <div class="app-hidden-details-container">
+                        <div class="app-hidden-details-container" id="mealFetcher-hidden-details-container">
                             <p>Comprendre et manipuler correctement les fonctions asynchrones peut être déroutant au
                                 début.</p>
                             <p>Tout comme la gestion des erreurs et états qui demande une bonne méthodologie de
@@ -251,46 +257,46 @@
                         <i class="fa-solid fa-angle-down app-details-arrow" tabindex="0"></i>
 
                         <div class="app-details-title-and-github-container">
-                            <p class="app-details-title" translate="no" id="app-meal_fetcher">
+                            <p class="app-details-title" translate="no">
                                 Meal fetcher
                             </p>
                             <div class="app-details-github-container">
                                 <a href="https://github.com/Nathan-Simonnet/Fetch_my_meal" target="_blank"
                                     class="app-details-github-link">
                                     <img src="/src/assets/images/Links/logo_github_40px.webp"
-                                        class="app-details-github-img" alt="Logo github" width="40px">
+                                        class="app-details-github-img github-logo" alt="Logo github" width="40px">
                                 </a>
                             </div>
                         </div>
-                        <div class="app-details-paragraph-container" id="paragraph-meal_fetcher">
+                        <div class="app-details-paragraph-container" id="mealFetcher-details-paragraph-container">
                             <p>Site de recette de cuisine :</p>
                             <p>Api, CRUD, affichage en temps réel, lightmode / darkmode, responsive design...</p>
                         </div>
                         <div class="app-details-logos-container">
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_api_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo API">
+                                    class="app-details-logo logo-api" alt="Logo représentant une API">
                             </div>
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_js_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de Javascript">
+                                    class="app-details-logo javascript-logo" alt="Logo de Javascript">
                             </div>
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_css_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de CSS">
+                                    class="app-details-logo css-logo" alt="Logo de CSS">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="card app-card app-card-worlview">
+                <div data-projectnamedata="worldview" class="card app-card worlview-card">
                     <a class="app-img-container" href="http://www.worldview.rf.gd/?i=2" target="_blank">
                         <img src="/src/assets/images/app/360W/app_worldview_360px.webp" alt="Image du site worlview"
-                            class="app-img">
+                            class="app-img" id="worldview-img">
                     </a>
 
                     <div class="app-details-container">
-                        <div class="app-hidden-details-container">
+                        <div class="app-hidden-details-container" id="worldview-hidden-details-container">
                             <p>En plus des difficultés propores aux API (comme pour meal fetcher), le systeme de tri
                                 prennait beaucoup trop de temps au début</p>
                             <p>Finalement j'ai du reprendre le code de zéro, afin de trouver une meilleur façon de
@@ -299,46 +305,46 @@
                         <i class="fa-solid fa-angle-down app-details-arrow" tabindex="0"></i>
 
                         <div class="app-details-title-and-github-container">
-                            <p class="app-details-title" translate="no" id="app-worlview">
+                            <p class="app-details-title" translate="no">
                                 Worldview
                             </p>
                             <div class="app-details-github-container">
                                 <a href="https://github.com/Nathan-Simonnet/Worldview" target="_blank"
                                     class="app-details-github-link">
                                     <img src="/src/assets/images/Links/logo_github_40px.webp"
-                                        class="app-details-github-img" alt="Logo github" width="40px">
+                                        class="app-details-github-img github-logo" alt="Logo github" width="40px">
                                 </a>
                             </div>
                         </div>
-                        <div class="app-details-paragraph-container" id="paragraph-worlview">
+                        <div class="app-details-paragraph-container" id="worldview-details-paragraph-container">
                             <p>Affichage de pays et diverses informations :</p>
                             <p>Api, CRUD, gestion des filtres en temps réel, responsive design, accessibilité...</p>
                         </div>
                         <div class="app-details-logos-container">
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_api_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo API">
+                                    class="app-details-logo logo-api" alt="Logo représentant une API">
                             </div>
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_js_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de Javascript">
+                                    class="app-details-logo javascript-logo" alt="Logo de Javascript">
                             </div>
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_css_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de CSS">
+                                    class="app-details-logo css-logo" alt="Logo de CSS">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="card app-card app-card-bubbles_popper">
+                <div data-projectnamedata="bubblesPopper" class="card app-card bubbles_popper-card">
                     <a class="app-img-container" href="https://nathan-simonnet.github.io/" target="_blank">
                         <img src="/src/assets/images/app/360W/app_bubble_360px.webp" alt="Image du site bubbles_popper"
-                            class="app-img">
+                            class="app-img" id="bubblesPopper-img">
                     </a>
 
                     <div class="app-details-container">
-                        <div class="app-hidden-details-container">
+                        <div class="app-hidden-details-container" id="bubblesPopper-hidden-details-container">
                             <p>Générer et gérer beaucoup de particules ou des animations variées a rapidement ralenti
                                 l’application.</p>
                             <p>Il a fallu apprendre à optimiser ces éléments pour garantir des performances stables.</p>
@@ -355,35 +361,35 @@
                                 <a href="https://github.com/Nathan-Simonnet/Nathan-simonnet.github.io" target="_blank"
                                     class="app-details-github-link">
                                     <img src="/src/assets/images/Links/logo_github_40px.webp"
-                                        class="app-details-github-img" alt="Logo github" width="40px">
+                                        class="app-details-github-img github-logo" alt="Logo github" width="40px">
                                 </a>
                             </div>
                         </div>
-                        <div class="app-details-paragraph-container" id="paragraph-bubbles_popper">
+                        <div class="app-details-paragraph-container" id="bubblesPopper-details-paragraph-container">
                             <p>Mini jeu (tout est dans le titre) :</p>
                             <p>Gestion du DOM, effet de particules, local storage, gestion du score ...</p>
                         </div>
                         <div class="app-details-logos-container">
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_js_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de Javascript">
+                                    class="app-details-logo javascript-logo" alt="Logo de Javascript">
                             </div>
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_css_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de CSS">
+                                    class="app-details-logo css-logo" alt="Logo de CSS">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="card app-card app-card-type_eval">
+                <div data-projectnamedata="typeEval" class="card app-card type_eval-card">
                     <a class="app-img-container" href="https://main--typeeval.netlify.app/" target="_blank">
                         <img src="/src/assets/images/app/360W/app_type-eval_360px.png" alt="Image du site type eval"
-                            class="app-img">
+                            class="app-img" id="typeEval-img">
                     </a>
 
                     <div class="app-details-container">
-                        <div class="app-hidden-details-container">
+                        <div class="app-hidden-details-container" id="typeEval-hidden-details-container">
                             <p>Gérer l'affichage dynamique des erreurs de frappe directement dans l'interface m'a
                                 demandé de prendre un grand recule (indications visuelles en cas d'erreur, suivi du
                                 curseur est fluide).</p>
@@ -400,11 +406,11 @@
                                 <a href="https://github.com/Nathan-Simonnet/Parallax-jungle" target="_blank"
                                     class="app-details-github-link">
                                     <img src="/src/assets/images/Links/logo_github_40px.webp"
-                                        class="app-details-github-img" alt="Logo github" width="40px">
+                                        class="app-details-github-img github-logo" alt="Logo github" width="40px">
                                 </a>
                             </div>
                         </div>
-                        <div class="app-details-paragraph-container" id="paragraph-type_eval">
+                        <div class="app-details-paragraph-container" id="typeEval-details-paragraph-container">
                             <p>Test de vitesse et précision d'écriture :</p>
                             <p>Gestion du suivi en temps réel des frappes (détection d'erreurs, vitesse / précision...)
                             </p>
@@ -412,21 +418,21 @@
                         <div class="app-details-logos-container">
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_js_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de Javascript">
+                                    class="app-details-logo javascript-logo" alt="Logo de Javascript">
                             </div>
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_css_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de CSS">
+                                    class="app-details-logo css-logo" alt="Logo de CSS">
                             </div>
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_json_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de JSON">
+                                    class="app-details-logo json-logo" alt="Logo représentant un fichier JSON">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- <div class="card app-card app-card-form">
+                <!-- <div data-projectnamedata="kasa" class="card app-card app-card-form">
                     <a class="app-img-container" href="" target="_blank">
                         <img src="/src/assets/images/app/360W/app_form_360px.webp" alt="Image du site form checker"
                             class="app-img">
@@ -448,7 +454,7 @@
                                 <a href="https://github.com/Nathan-Simonnet/Form-checker" target="_blank"
                                     class="app-details-github-link">
                                     <img src="/src/assets/images/Links/logo_github_40px.webp"
-                                        class="app-details-github-img" alt="Logo github" width="40px">
+                                        class="app-details-github-img github-logo" alt="Logo github" width="40px">
                                 </a>
                             </div>
                         </div>
@@ -459,24 +465,24 @@
                         <div class="app-details-logos-container">
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_js_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de Javascript">
+                                    class="app-details-logo javascript-logo" alt="Logo de Javascript">
                             </div>
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_css_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de CSS">
+                                    class="app-details-logo css-logo" alt="Logo de CSS">
                             </div>
                         </div>
                     </div>
                 </div> -->
 
-                <div class="card app-card app-card-password_maker">
+                <div data-projectnamedata="passwordMaker" class="card app-card password_maker-card">
                     <a class="app-img-container" href="http://password-maker.000.pe/" target="_blank">
                         <img src="/src/assets/images/app/360W/app_password-maker_360px.webp"
-                            alt="Image du site password_maker" class="app-img">
+                            alt="Image du site password_maker" class="app-img" id="passwordMaker-img">
                     </a>
 
                     <div class="app-details-container">
-                        <div class="app-hidden-details-container">
+                        <div class="app-hidden-details-container" id="passwordMaker-hidden-details-container">
                             <p>Gérer les options personnalisables de l'utilisateur, au vu du nombre de possibilités fut
                                 complexe.</p>
                             <p>À partir de ce projet, j'ai appris à être plus "modulaire" dans mon approche, j'ai mieux
@@ -492,35 +498,35 @@
                                 <a href="https://github.com/Nathan-Simonnet/Password_maker" target="_blank"
                                     class="app-details-github-link">
                                     <img src="/src/assets/images/Links/logo_github_40px.webp"
-                                        class="app-details-github-img" alt="Logo github" width="40px">
+                                        class="app-details-github-img github-logo" alt="Logo github" width="40px">
                                 </a>
                             </div>
                         </div>
-                        <div class="app-details-paragraph-container" id="paragraph-password_maker">
+                        <div class="app-details-paragraph-container" id="passwordMaker-details-paragraph-container">
                             <p>Création de mots de passes :</p>
                             <p>Regexp, gestion des filtres, algorithme de “randomisation”...</p>
                         </div>
                         <div class="app-details-logos-container">
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_js_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de Javascript">
+                                    class="app-details-logo javascript-logo" alt="Logo de Javascript">
                             </div>
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_css_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de CSS">
+                                    class="app-details-logo css-logo" alt="Logo de CSS">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="card app-card app-card-booki">
+                <div data-projectnamedata="booki" class="card app-card booki-card">
                     <a class="app-img-container" href="http://booki.kesug.com/?i=2" target="_blank">
                         <img src="/src/assets/images/app/360W/booki_360px.webp" alt="Image du site booki"
-                            class="app-img">
+                            class="app-img" id="booki-img">
                     </a>
 
                     <div class="app-details-container">
-                        <div class="app-hidden-details-container">
+                        <div class="app-hidden-details-container" id="booki-hidden-details-container">
                             <p>La maquette est un guide formidable, mais par le fait même, elle est exigeante,
                                 intransigeante.</p>
                             <p>Les écarts dans la typographie, les espacements, ou les tailles d'images ont été évités
@@ -538,35 +544,35 @@
                                 <a href="https://github.com/Nathan-Simonnet/booki" target="_blank"
                                     class="app-details-github-link">
                                     <img src="/src/assets/images/Links/logo_github_40px.webp"
-                                        class="app-details-github-img" alt="Logo github" width="40px">
+                                        class="app-details-github-img github-logo" alt="Logo github" width="40px">
                                 </a>
                             </div>
                         </div>
-                        <div class="app-details-paragraph-container" id="paragraph-booki">
+                        <div class="app-details-paragraph-container" id="booki-details-paragraph-container">
                             <p>Site de réservation de chambres d'hôtel :</p>
                             <p>Integration à partir d'une maquette, optimisation des images, responsive design...</p>
                         </div>
                         <div class="app-details-logos-container">
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_js_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de Javascript">
+                                    class="app-details-logo javascript-logo" alt="Logo de Javascript">
                             </div>
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_css_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de CSS">
+                                    class="app-details-logo css-logo" alt="Logo de CSS">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="card app-card app-card-parallax_jungle">
+                <div data-projectnamedata="parallaxJungle" class="card app-card parallax_jungle-card">
                     <a class="app-img-container" href="http://parallax-jungle.free.nf/?i=1" target="_blank">
                         <img src="/src/assets/images/app/360W/parralax_jungle_360W.png"
-                            alt="Image du site parallax_jungle" class="app-img">
+                            alt="Image du site parallax_jungle" class="app-img" id="parallaxJungle-img">
                     </a>
 
                     <div class="app-details-container">
-                        <div class="app-hidden-details-container">
+                        <div class="app-hidden-details-container" id="parallaxJungle-hidden-details-container">
                             <p>Placer les images dans le bon ordre (avec des z-index) pour créer la profondeur
                                 souhaitée, tout en s'assurant qu’elles sont bien positionnées, a été un défis, notemment
                                 sur l'aspect responsiv design.</p>
@@ -583,11 +589,11 @@
                                 <a href="https://github.com/Nathan-Simonnet/Parallax-jungle" target="_blank"
                                     class="app-details-github-link">
                                     <img src="/src/assets/images/Links/logo_github_40px.webp"
-                                        class="app-details-github-img" alt="Logo github" width="40px">
+                                        class="app-details-github-img github-logo" alt="Logo github" width="40px">
                                 </a>
                             </div>
                         </div>
-                        <div class="app-details-paragraph-container" id="paragraph-parallax_jungle">
+                        <div class="app-details-paragraph-container" id="parallaxJungle-details-paragraph-container">
                             <p>Effet de parallax :</p>
                             <p>Superposition d'images, tranlation, gestions des positions et de vitesse de transition...
                             </p>
@@ -595,11 +601,11 @@
                         <div class="app-details-logos-container">
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_js_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de Javascript">
+                                    class="app-details-logo javascript-logo" alt="Logo de Javascript">
                             </div>
                             <div class="app-details-logo-container">
                                 <img src="/src/assets/images/Tecnhos/40px/logo_css_40px.webp" width="40px"
-                                    class="app-details-logo" alt="Logo de CSS">
+                                    class="app-details-logo css-logo" alt="Logo de CSS">
                             </div>
                         </div>
                     </div>
@@ -617,80 +623,80 @@
             <div class="tools-container">
                 <div class="specific-tools-container dev_tools">
                     <div class="tools-title-container">
-                        <h3 id="dev_tools-title dev_tools" class="tools-title">Côté programmation</h3>
+                        <h3 id="dev_tools-title" class="tools-title dev_tools">Côté programmation</h3>
                     </div>
                     <div class="tools-logos-container">
-                        <div class="tools-logo-container">
+                        <div class="tools-logo-container" tabindex="0">
                             <p class="tools-logo-name" translate="no">Node.js</p>
                             <img src="/src/assets/images/Tecnhos/120px/logo_node-2_120px.webp" width="80px"
-                                class="tools-logo" alt="Logo de Node JS">
+                                class="tools-logo node-logo" alt="Logo de Node JS">
                         </div>
-                        <div class="tools-logo-container">
+                        <div class="tools-logo-container" tabindex="0">
                             <p class="tools-logo-name" translate="no">MongoDB</p>
                             <img src="/src/assets/images/Tecnhos/120px/logo-mongo_100px.webp" width="80px"
-                                class="tools-logo" alt="Logo de Mongo db">
+                                class="tools-logo mongo-logo" alt="Logo de Mongo db">
                         </div>
-                        <div class="tools-logo-container">
+                        <div class="tools-logo-container" tabindex="0">
                             <p class="tools-logo-name" translate="no">React</p>
                             <img src="/src/assets/images/Tecnhos/120px/logo_react_120px.webp" width="80px"
-                                class="tools-logo" alt="Logo de React">
+                                class="tools-logo react-logo" alt="Logo de React">
                         </div>
-                        <div class="tools-logo-container">
+                        <div class="tools-logo-container" tabindex="0">
                             <p class="tools-logo-name" translate="no">Javascript</p>
                             <img src="/src/assets/images/Tecnhos/120px/logo_js_120px.webp" width="80px"
-                                class="tools-logo" alt="Logo de Javascript">
+                                class="tools-logo javascript-logo" alt="Logo de Javascript">
                         </div>
-                        <!-- <div class="tools-logo-container">
+                        <!-- <div class="tools-logo-container" tabindex="0">
                             <p class="tools-logo-name" translate="no">Typescript</p> 
                             <img src="/src/assets/images/Tecnhos/120px/logo_typescript_120px.png" width="80px" class="tools-logo"
                                 alt="Logo de Typescript">
                         </div> -->
-                        <div class="tools-logo-container">
+                        <div class="tools-logo-container" tabindex="0">
                             <p class="tools-logo-name" translate="no">CSS</p>
                             <img src="/src/assets/images/Tecnhos/120px/logo_css_120px.webp" width="80px"
-                                class="tools-logo" alt="Logo de CSS">
+                                class="tools-logo css-logo" alt="Logo de CSS">
                         </div>
-                        <div class="tools-logo-container">
+                        <div class="tools-logo-container" tabindex="0">
                             <p class="tools-logo-name" translate="no">Sass</p>
                             <img src="/src/assets/images/Tecnhos/120px/logo_sass-2_120px.webp" width="80px"
-                                class="tools-logo" alt="Logo de SASS">
+                                class="tools-logo sass-logo" alt="Logo de SASS">
                         </div>
-                        <div class="tools-logo-container">
+                        <div class="tools-logo-container" tabindex="0">
                             <p class="tools-logo-name" translate="no">Tailwind</p>
                             <img src="/src/assets/images/Tecnhos/120px/logo_tailwind_120px.webp" width="80px"
-                                class="tools-logo" alt="Logo de Tailwind">
+                                class="tools-logo tailwind-logo" alt="Logo de Tailwind">
                         </div>
                     </div>
                 </div>
                 <div class="specific-tools-container other_tools">
                     <div class="tools-title-container">
-                        <h3 id="other_tools-title other_tools" class="tools-title">Côté design et collaboration</h3>
+                        <h3 id="other_tools-title" class="tools-title other_tools">Côté design et collaboration</h3>
                     </div>
                     <div class="tools-logos-container">
-                        <div class="tools-logo-container">
+                        <div class="tools-logo-container" tabindex="0">
                             <p class="tools-logo-name" translate="no">Figma</p>
                             <img src="/src/assets/images/Tecnhos/120px/logo_figma_120px.webp" width="80px"
-                                class="tools-logo" alt="Logo de Figma">
+                                class="tools-logo figma-logo" alt="Logo de Figma">
                         </div>
-                        <!-- <div class="tools-logo-container">
+                        <!-- <div class="tools-logo-container" tabindex="0">
                              <p class="tools-logo-name"  translate="no" >Jira</p>
                              <img src="/src/assets/images/Tecnhos/120px/logo_jira_120px.webp" width="80px" class="tools-logo"
                                 alt="Logo de Jira">
                         </div> -->
-                        <div class="tools-logo-container">
+                        <div class="tools-logo-container" tabindex="0">
                             <p class="tools-logo-name" translate="no">Canva</p>
                             <img src="/src/assets/images/Tecnhos/120px/logo_canva_120px.png" width="80px"
-                                class="tools-logo" alt="Logo de Canva">
+                                class="tools-logo canva-logo" alt="Logo de Canva">
                         </div>
-                        <div class="tools-logo-container">
+                        <div class="tools-logo-container" tabindex="0">
                             <p class="tools-logo-name" translate="no">Github</p>
                             <img src="/src/assets/images/Tecnhos/120px/logo_github_120px.webp" width="80px"
-                                class="tools-logo" alt="Logo de Github">
+                                class="tools-logo github-logo" alt="Logo de Github">
                         </div>
-                        <div class="tools-logo-container">
+                        <div class="tools-logo-container" tabindex="0">
                             <p class="tools-logo-name" translate="no">Trello</p>
                             <img src="/src/assets/images/Tecnhos/120px/logo_trello-120px.png" width="80px"
-                                class="tools-logo" alt="Logo de trello">
+                                class="tools-logo trello-logo" alt="Logo de trello">
                         </div>
                     </div>
                 </div>
@@ -720,20 +726,22 @@
                             Une base solide en HTML/CSS/JS, plusieurs projets en React et encore plus à venir, quelques
                             projets en Node.js afin d'élargir mes horizons...
                         </p>
-                        <!-- <p>
-                            Ce qui a commencé comme une occupation, est maintenant devenu une passion, me poussant à me former continuellement.
-                        </p> -->
                         <p>
                             L'objectif maintenant, full stack! A suivre...
                         </p>
                     </div>
-                    <div class="profile-cv_and_github-container">
+                    <div class="profile-links-container">
                         <a href="https://www.canva.com/design/DAGRBFSO-KE/2scE0fRfAs7SbH98Swk0Dg/edit?utm_content=DAGRBFSO-KE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
                             target="_blank"><button class="btn btn-cv profile-cv" id="btnCv" tabindex="-1">Mon
                                 CV</button></a>
                         <a href="https://github.com/Nathan-Simonnet" target="_blank" class="profile-github-link">
-                            <img src="src/assets/images/Links/logo_github_40px.webp" class="profile-github-img"
-                                alt="logo de Github"></a>
+                            <img src="src/assets/images/Links/logo_github_40px.webp"
+                                class="profile-github-img github-logo" alt="Logo de Github"></a>
+
+                        <a href="https://www.facebook.com/nathan.simonnet.9" target="_blank" class="profile-facebook-link">
+                            <img src="src/assets/images/Links/logo_facebook_40px.webp" class="profile-facebook-img facebook-logo"
+                                alt="Logo de facebook">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -750,20 +758,11 @@
 
             <div class="contact-container">
                 <button class="btn btn-contact" id="btnContact">nathan.simonnet@gmail.com</button>
-                <div class="contact-logos-container">
-                    <div class="footer-link-container">
-                        <a href="https://www.linkedin.com/in/simonnet-nathan/" target="_blank" class="footer-link">
-                            <img src="src/assets/images/Links/logo_linkedin_40px.webp" class="footer-link-img"
-                                alt="logo de linkedin">
-                        </a>
-                    </div>
-
-                    <div class="footer-link-container">
-                        <a href="https://www.facebook.com/nathan.simonnet.9" target="_blank" class="footer-link">
-                            <img src="src/assets/images/Links/logo_facebook_40px.webp" class="footer-link-img"
-                                alt="logo de facebook">
-                        </a>
-                    </div>
+                <div class="contact-links-container">
+                    <a href="https://www.linkedin.com/in/simonnet-nathan/" target="_blank" class="contact-linkedin-link">
+                        <img src="src/assets/images/Links/logo_linkedin_40px.webp" class="contact-linkedin-img linkedin-logo"
+                            alt="logo de linkedin">
+                    </a>
                 </div>
             </div>
         </section>

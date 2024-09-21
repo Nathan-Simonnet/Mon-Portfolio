@@ -1,12 +1,30 @@
 {
+    "logos": {
+        "github": "GitHub logo",
+        "javascript": "JavaScript logo",
+        "react": "React logo",
+        "css": "CSS logo",
+        "sass":"SASS logo",
+        "tailwind":"Tailwind logo",
+        "node":"Node.js logo",
+        "mongo":"MongoDB logo",
+        "json": "Logo representing a JSON file",
+        "api": "Logo representing an API"
+    },
     "header": {
         "flags": {
-            "fr": "Flag of France",
-            "en": "Flag of England"
+            "fr": {
+                "alt": "France flag",
+                "aria": "Cliquez pour avoir le site en français"
+            },
+            "en": {
+                "alt": "England flag",
+                "aria": "Click for english version"
+            }
         },
         "nav": [
             "Projects",
-            "Technologies",
+            "Tools",
             "Profile",
             "Contact"
         ]
@@ -16,7 +34,7 @@
         "title": "Some projects",
         "cards": {
             "kasa": {
-                "alt": "Image of the Kasa site",
+                "alt": "Image of the site Kasa",
                 "title": "Kasa",
                 "details": [
                     "Apartment rental site:",
@@ -39,7 +57,7 @@
                     "And now, I know that passing a variable through it is not so simple (the score, in this case)."
                 ]
             },
-            "meal_fetcher": {
+            "mealFetcher": {
                 "alt": "Image of the Meal Fetcher site",
                 "title": "Meal Fetcher",
                 "details": [
@@ -51,7 +69,7 @@
                     "Just like error and state management, which requires good debugging methodology."
                 ]
             },
-            "Worldview": {
+            "worldview": {
                 "alt": "Image of the Worldview site",
                 "title": "Worldview",
                 "details": [
@@ -63,7 +81,7 @@
                     "Eventually, I had to start the code from scratch to find a better way to declare my functions, in line with my data retrieval."
                 ]
             },
-            "bubbles_popper": {
+            "bubblesPopper": {
                 "alt": "Image of the Bubbles Popper site",
                 "title": "Bubbles Popper",
                 "details": [
@@ -76,7 +94,7 @@
                     "And of course, learn to structure a game loop that updates state and rendering smoothly."
                 ]
             },
-            "type_eval": {
+            "typeEval": {
                 "alt": "Image of the Type Eval site",
                 "title": "Type Eval",
                 "details": [
@@ -88,7 +106,7 @@
                     "It forced me to think through all the possible options and eventually find the most optimized one (which was far from what I initially imagined)."
                 ]
             },
-            "password_maker": {
+            "passwordMaker": {
                 "alt": "Image of the Password Maker site",
                 "title": "Password Maker",
                 "details": [
@@ -113,7 +131,7 @@
                     "And this, while taking into account browser compatibility and some notion of accessibility."
                 ]
             },
-            "parallax_jungle": {
+            "parallaxJungle": {
                 "alt": "Image of the Parallax Jungle site",
                 "title": "Parallax Jungle",
                 "details": [
@@ -130,7 +148,7 @@
     "tools": {
         "title": "My tools/technologies",
         "dev_tools": {
-            "title": "On the programming side",
+            "title": "Programming",
             "logos": {
                 "node": "Node.js logo",
                 "mongo": "MongoDB logo",
@@ -142,16 +160,15 @@
             }
         },
         "other_tools": {
-            "title": "On the design and collaboration side",
+            "title": "Design and collaboration",
             "logos": {
                 "figma": "Figma logo",
                 "canva": "Canva logo",
-                "github": "Github logo",
                 "trello": "Trello logo"
             }
         }
     },
-    "profil": {
+    "profile": {
         "title": "About me",
         "img": "Photo of myself",
         "bio": [
@@ -160,11 +177,12 @@
             "The goal now is full stack! To be continued..."
         ],
         "cv": "My CV",
-        "github": "Github logo"
+        "facebook": " Facebook logo"
     },
     "contact": {
         "title": "Contact",
-        "mail": "Copied!"
+        "mail": "Copied !",
+        "linkedin": "Linkedin logo"
     },
     "footer": "Last updated: 09/2024"
 }

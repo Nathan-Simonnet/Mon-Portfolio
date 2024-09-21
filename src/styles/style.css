@@ -610,7 +610,7 @@ section#tools .tools-container .specific-tools-container .tools-logos-container 
 section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container .tools-logo {
   width: 80px;
 }
-section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container:hover .tools-logo-name {
+section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container:hover .tools-logo-name, section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container:focus .tools-logo-name {
   opacity: 1;
   width: 120px;
   padding: 12px;
@@ -687,23 +687,23 @@ section#profile .profile-container .profile-bio_and_cv-container .profile-bio-co
 section#profile .profile-container .profile-bio_and_cv-container .profile-bio-container p:last-child {
   padding: 0;
 }
-section#profile .profile-container .profile-bio_and_cv-container .profile-cv_and_github-container {
+section#profile .profile-container .profile-bio_and_cv-container .profile-links-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
-section#profile .profile-container .profile-bio_and_cv-container .profile-cv_and_github-container .btn-cv {
+section#profile .profile-container .profile-bio_and_cv-container .profile-links-container .btn-cv {
   height: 40px;
   width: 100px;
 }
-section#profile .profile-container .profile-bio_and_cv-container .profile-cv_and_github-container .profile-github-link {
+section#profile .profile-container .profile-bio_and_cv-container .profile-links-container .profile-github-link, section#profile .profile-container .profile-bio_and_cv-container .profile-links-container .profile-facebook-link {
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.1s;
 }
-section#profile .profile-container .profile-bio_and_cv-container .profile-cv_and_github-container .profile-github-link:hover {
+section#profile .profile-container .profile-bio_and_cv-container .profile-links-container .profile-github-link:hover, section#profile .profile-container .profile-bio_and_cv-container .profile-links-container .profile-facebook-link:hover {
   transform: scale(1.1);
 }
 
@@ -728,7 +728,7 @@ section#profile .profile-container .profile-bio_and_cv-container .profile-cv_and
     align-items: center;
     gap: 60px;
   }
-  section#profile .profile-container .profile-bio_and_cv-container .profile-cv_and_github-container {
+  section#profile .profile-container .profile-bio_and_cv-container .profile-links-container {
     text-align: center;
   }
 }
@@ -767,6 +767,11 @@ section#contact .contact-container {
 section#contact .contact-container .btn-contact {
   height: 50px;
   width: 240px;
+}
+section#contact .contact-container .contact-linkedin-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 @media (max-width: 926px) {

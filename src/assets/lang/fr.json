@@ -1,13 +1,31 @@
 {
+    "logos":{
+        "github":"Logo de github",
+        "javascript":"Logo de javascript",
+        "react":"Logo de react",
+        "css":"Logo de CSS",
+        "sass":"Logo de SASS",
+        "tailwind":"Logo de Tailwind",
+        "node":"Logo de Node.js",
+        "mongo":"Logo de MongoDB",
+        "json":"Logo représentant un fichier JSON",
+        "api":"Logo représentant une API"
+    },
     "header": {
         "flags":{
-            "fr":"Drapeau de la France",
-            "en":"Drapeau de l'angleterre"
+            "fr":{
+                "alt":"Drapeau de la France",
+                "aria":"Cliquez pour avoir le site en français"
+            },
+            "en":{
+                "alt":"Drapeau de l'Angleterre",
+                "aria":"Click for english version"
+            }
         },
         "nav": [
             "Projets",
-            "technos",
-            "profil",
+            "Technos",
+            "Profil",
             "Contact"
         ]
     },
@@ -39,7 +57,7 @@
                     "Et maintenant, je sais que faire suivre une variable entre les différentes page demande une certaine prudence (le score en l'occurrence)"
                 ]
             },
-            "meal_fetcher": {
+            "mealFetcher": {
                 "alt":"Image du site meal fetcher",
                 "title": "Meal fetcher",
                 "details": [
@@ -51,7 +69,7 @@
                     "Tout comme la gestion des erreurs et états qui demande une bonne méthodologie de debugage."
                 ]
             },
-            "Worldview": {
+            "worldview": {
                 "alt":"Image du site worldview",
                 "title": "Worldview",
                 "details": [
@@ -63,7 +81,7 @@
                     "Finalement j'ai du reprendre le code de zéro, afin de trouver une meilleur façon de déclarer mes fonctions, en adéquation avec ma récupération de données."
                 ]
             },
-            "bubbles_popper": {
+            "bubblesPopper": {
                 "alt":"Image du site bubbles popper",
                 "title": "Bubbles popper",
                 "details": [
@@ -76,8 +94,8 @@
                     "Et bien sure, apprendre à structurer une boucle de jeu qui met à jour l’état et le rendu de manière fluide."
                 ]
             },
-            "type_eval": {
-                "alt":"Image du site type eval",
+            "typeEval": {
+                "alt":"Image du site Type eval",
                 "title": "Type eval",
                 "details": [
                     "Test de vitesse et précision d'écriture :",
@@ -88,7 +106,7 @@
                     "Cela m'a forcé à réfléchir à toutes les options possibles, et finalement trouver la plus optimisée (qui fut loin de ce que j'imaginais au départ)"
                 ]
             },
-            "password_maker": {
+            "passwordMaker": {
                 "alt":"Image du site password maker",
                 "title": "Password maker",
                 "details": [
@@ -113,7 +131,7 @@
                     "Et ce, en tenant compte de la compatibilité des navigateurs, ainsi qu'une certaine notion d'accessibilité."
                 ]
             },
-            "parallax_jungle": {
+            "parallaxJungle": {
                 "alt":"Image du site parallax jungle",
                 "title": "Parallax jungle",
                 "details": [
@@ -132,13 +150,13 @@
         "dev_tools": {
             "title": "Côté programmation",
             "logos": {
-                "node":"logo de Node.js",
-                "mongo":"logo de mongoDB",
-                "React":"logo de React",
-                "javascript":"logo de Javascript",
-                "css":"logo de CSS",
-                "sass":"logo de SASS",
-                "tailwind":"logo de Tailwind"
+                    "javascript":"Logo de javascript",
+                    "react":"Logo de react",
+                    "css":"Logo de CSS",
+                    "sass":"Logo de SASS",
+                    "tailwind":"Logo de Tailwind",
+                    "node":"Logo de Node.js",
+                    "mongo":"Logo de MongoDB"
             }
         },
         "other_tools": {
@@ -146,25 +164,25 @@
             "logos": {
                 "figma":"logo de Figma",
                 "canva":"logo de Canva",
-                "github":"logo de Github",
                 "trello":"logo de Trello"
             }
         }
     },
-    "profil": {
+    "profile": {
         "title": "À propos de moi",
-        "img":"Photo de moi même",
+        "img":"Photo de moi",
         "bio": [
             "Je m'exerce à la programmation depuis 2022, et suis actuellement une formation en développement web avec Openclassrooms.",
             "Une base solide en HTML/CSS/JS, plusieurs projets en React et encore plus à venir, quelques projets en Node.js afin d'élargir mes horizons...",
             "L'objectif maintenant, full stack! A suivre..."
         ],
         "cv": "Mon CV",
-        "github":"logo de Github"
+        "facebook":"Logo de facebook"
     },
     "contact": {
         "title": "Contact",
-        "mail": "Copié !"
+        "mail": "Copié !",
+        "linkedin": "Logo de Linkedin"
     },
     "footer": "Dernière mise à jour : 09/2024"
 }
