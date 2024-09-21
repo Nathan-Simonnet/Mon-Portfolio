@@ -233,7 +233,7 @@ header nav ul {
   justify-content: center;
   align-items: center;
   gap: 60px;
-  transition: 0;
+  transition: none;
 }
 header nav ul .nav-link {
   font-size: 1.4rem;
