@@ -3,61 +3,9 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-
-    .footer-links-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-
-        .footer-link-container {
-            width: 40px;
-
-            .footer-link {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                .footer-link-img {               
-                    width: 100%;}
-
-                .footer-link-img:hover {
-                    transform: scale(1.1);
-                }
-            }
-        }
-    }
 
     .footer-last_update-container {
         .footer-last_update {}
     }
 }
 
-
-@include breakpoint(medium) {
-    footer{
-    }
-}
-
-@include breakpoint(small) {
-
-    footer {
-        .footer-links-container {
-            gap: 35px;
-            .footer-link-container {
-                width: 35px;
-                .footer-link {
-    
-                    .footer-link-img {}
-
-                }
-            }
-        }
-    
-        .footer-last_update-container {
-            .footer-last_update {}
-        }
-    }
-    
-}

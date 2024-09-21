@@ -40,10 +40,25 @@ section#profile {
                 }
             }
 
-            .profile-cv-container {
+            .profile-cv_and_github-container {
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                
+                gap: 30px;
+
                 .btn-cv {
                     height: 40px;
                     width: 100px;
+                }
+                .profile-github-link{
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                    transition: 0.1s;
+                }
+                .profile-github-link:hover{
+                    transform: scale(1.1);
                 }
             }
         }
@@ -73,7 +88,7 @@ section#profile {
             .profile-bio_and_cv-container {
                 align-items: center;
                 gap: 60px;
-                .profile-cv-container {
+                .profile-cv_and_github-container {
                     text-align:center;
                 }
             }

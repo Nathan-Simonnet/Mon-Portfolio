@@ -1,0 +1,170 @@
+{
+    "header": {
+        "flags": {
+            "fr": "Flag of France",
+            "en": "Flag of England"
+        },
+        "nav": [
+            "Projects",
+            "Technologies",
+            "Profile",
+            "Contact"
+        ]
+    },
+    "homePage": "Web Developer",
+    "projects": {
+        "title": "Some projects",
+        "cards": {
+            "kasa": {
+                "alt": "Image of the Kasa site",
+                "title": "Kasa",
+                "details": [
+                    "Apartment rental site:",
+                    "React router, links, navigation, ID handling/errors, redirects..."
+                ],
+                "hiddenDetails": [
+                    "This project taught me that React has its own language and workflow, which I had to learn.",
+                    "However, the modular aspect, once you know how to organize yourself, allows for better code management."
+                ]
+            },
+            "quiz": {
+                "alt": "Image of the JavaScript quiz site",
+                "title": "Kasa",
+                "details": [
+                    "Customizable quiz:",
+                    "React router, links, navigation, answer and score management..."
+                ],
+                "hiddenDetails": [
+                    "A good exercise in route management with React.",
+                    "And now, I know that passing a variable through it is not so simple (the score, in this case)."
+                ]
+            },
+            "meal_fetcher": {
+                "alt": "Image of the Meal Fetcher site",
+                "title": "Meal Fetcher",
+                "details": [
+                    "Recipe site:",
+                    "API, CRUD, real-time display, light mode/dark mode, responsive design..."
+                ],
+                "hiddenDetails": [
+                    "Understanding and properly handling asynchronous functions can be confusing at first.",
+                    "Just like error and state management, which requires good debugging methodology."
+                ]
+            },
+            "Worldview": {
+                "alt": "Image of the Worldview site",
+                "title": "Worldview",
+                "details": [
+                    "Country display and various information:",
+                    "API, CRUD, real-time filter management, responsive design, accessibility..."
+                ],
+                "hiddenDetails": [
+                    "In addition to the challenges specific to APIs (as with Meal Fetcher), the sorting system took too much time at first.",
+                    "Eventually, I had to start the code from scratch to find a better way to declare my functions, in line with my data retrieval."
+                ]
+            },
+            "bubbles_popper": {
+                "alt": "Image of the Bubbles Popper site",
+                "title": "Bubbles Popper",
+                "details": [
+                    "Mini-game (it's all in the title):",
+                    "DOM management, particle effects, local storage, score management..."
+                ],
+                "hiddenDetails": [
+                    "Generating and managing many particles or various animations quickly slowed the application.",
+                    "I had to learn to optimize these elements to ensure stable performance.",
+                    "And of course, learn to structure a game loop that updates state and rendering smoothly."
+                ]
+            },
+            "type_eval": {
+                "alt": "Image of the Type Eval site",
+                "title": "Type Eval",
+                "details": [
+                    "Typing speed and accuracy test:",
+                    "Real-time keystroke tracking (error detection, speed/accuracy...)"
+                ],
+                "hiddenDetails": [
+                    "Managing dynamic error display directly in the interface required me to take a step back (visual indicators in case of error, smooth cursor tracking).",
+                    "It forced me to think through all the possible options and eventually find the most optimized one (which was far from what I initially imagined)."
+                ]
+            },
+            "password_maker": {
+                "alt": "Image of the Password Maker site",
+                "title": "Password Maker",
+                "details": [
+                    "Password creation:",
+                    "Regexp, filter management, randomization algorithm..."
+                ],
+                "hiddenDetails": [
+                    "Managing the user's customizable options, given the number of possibilities, was complex.",
+                    "From this project, I learned to be more 'modular' in my approach, better dividing my functions for clarity."
+                ]
+            },
+            "booki": {
+                "alt": "Image of the Booki site",
+                "title": "Booki",
+                "details": [
+                    "Hotel room booking site:",
+                    "Integration from a mockup, image optimization, responsive design..."
+                ],
+                "hiddenDetails": [
+                    "The mockup is a great guide, but by its very nature, it is demanding and unforgiving.",
+                    "Discrepancies in typography, spacing, or image sizes were avoided as much as possible.",
+                    "And this, while taking into account browser compatibility and some notion of accessibility."
+                ]
+            },
+            "parallax_jungle": {
+                "alt": "Image of the Parallax Jungle site",
+                "title": "Parallax Jungle",
+                "details": [
+                    "Parallax effect:",
+                    "Image layering, translation, position and transition speed management..."
+                ],
+                "hiddenDetails": [
+                    "Placing the images in the right order (with z-index) to create the desired depth, while ensuring they are well-positioned, was a challenge, especially on the responsive design side.",
+                    "Each element had to move at a different speed while remaining visually coherent."
+                ]
+            }
+        }
+    },
+    "tools": {
+        "title": "My tools/technologies",
+        "dev_tools": {
+            "title": "On the programming side",
+            "logos": {
+                "node": "Node.js logo",
+                "mongo": "MongoDB logo",
+                "React": "React logo",
+                "javascript": "JavaScript logo",
+                "css": "CSS logo",
+                "sass": "SASS logo",
+                "tailwind": "Tailwind logo"
+            }
+        },
+        "other_tools": {
+            "title": "On the design and collaboration side",
+            "logos": {
+                "figma": "Figma logo",
+                "canva": "Canva logo",
+                "github": "Github logo",
+                "trello": "Trello logo"
+            }
+        }
+    },
+    "profil": {
+        "title": "About me",
+        "img": "Photo of myself",
+        "bio": [
+            "I've been practicing programming since 2022 and am currently following a web development course with OpenClassrooms.",
+            "A solid foundation in HTML/CSS/JS, several React projects and more to come, a few Node.js projects to broaden my horizons...",
+            "The goal now is full stack! To be continued..."
+        ],
+        "cv": "My CV",
+        "github": "Github logo"
+    },
+    "contact": {
+        "title": "Contact",
+        "mail": "Copied!"
+    },
+    "footer": "Last updated: 09/2024"
+}

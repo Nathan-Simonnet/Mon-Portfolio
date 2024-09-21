@@ -1,0 +1,170 @@
+{
+    "header": {
+        "flags":{
+            "fr":"Drapeau de la France",
+            "en":"Drapeau de l'angleterre"
+        },
+        "nav": [
+            "Projets",
+            "technos",
+            "profil",
+            "Contact"
+        ]
+    },
+    "homePage": "Développeur web",
+    "projects": {
+        "title": "Quelques projets",
+        "cards": {
+            "kasa": {
+                "alt":"Image du site Kasa",
+                "title": "Kasa",
+                "details": [
+                    "Site de location d'appartements :",
+                    "React router, links, navigation, gestion des id / erreurs, redirections..."
+                ],
+                "hiddenDetails": [
+                    "Ce projet m'a permis de découvrir que React à un langage et un fonctionnement propre, qu'il a fallu apprendre.",
+                    "Cependant, l'aspect modulaire, une fois que l'on sait s'organiser, permet une meilleure gestion du code."
+                ]
+            },
+            "quiz": {
+                "alt":"Image du site quiz Javascript",
+                "title": "Kasa",
+                "details": [
+                    "Quiz personnalisable :",
+                    "React router, links, navigation, gestion des réponses et du score..."
+                ],
+                "hiddenDetails": [
+                    "Un bon entrainement à la gestion des routes en React.",
+                    "Et maintenant, je sais que faire suivre une variable entre elle n'est pas si simple (le score en l'occurrence)."
+                ]
+            },
+            "meal_fetcher": {
+                "alt":"Image du site meal fetcher",
+                "title": "Meal fetcher",
+                "details": [
+                    "Site de recette de cuisine :",
+                    "Api, CRUD, affichage en temps réel, lightmode / darkmode, responsive design..."
+                ],
+                "hiddenDetails": [
+                    "Comprendre et manipuler correctement les fonctions asynchrones peut être déroutant au début.",
+                    "Tout comme la gestion des erreurs et états qui demande une bonne méthodologie de debugage."
+                ]
+            },
+            "Worldview": {
+                "alt":"Image du site worldview",
+                "title": "Worldview",
+                "details": [
+                    "Affichage de pays et diverses informations :",
+                    "Api, CRUD, gestion des filtres en temps réel, responsive design, accessibilité..."
+                ],
+                "hiddenDetails": [
+                    "En plus des difficultés propores aux API (comme pour meal fetcher), le systeme de tri prennait beaucoup trop de temps au début.",
+                    "Finalement j'ai du reprendre le code de zéro, afin de trouver une meilleur façon de déclarer mes fonctions, en adéquation avec ma récupération de données."
+                ]
+            },
+            "bubbles_popper": {
+                "alt":"Image du site bubbles popper",
+                "title": "Bubbles popper",
+                "details": [
+                    "Mini jeu (tout est dans le titre) :",
+                    "Gestion du DOM, effet de particules, local storage, gestion du score ..."
+                ],
+                "hiddenDetails": [
+                    "Générer et gérer beaucoup de particules ou des animations variées a rapidement ralenti l’application.",
+                    "Il a fallu apprendre à optimiser ces éléments pour garantir des performances stables.",
+                    "Et bien sure, apprendre à structurer une boucle de jeu qui met à jour l’état et le rendu de manière fluide."
+                ]
+            },
+            "type_eval": {
+                "alt":"Image du site type eval",
+                "title": "Type eval",
+                "details": [
+                    "Test de vitesse et précision d'écriture :",
+                    "Gestion du suivi en temps réel des frappes (détection d'erreurs, vitesse / précision...)"
+                ],
+                "hiddenDetails": [
+                    "Gérer l'affichage dynamique des erreurs de frappe directement dans l'interface m'a demandé de prendre un grand recule (indications visuelles en cas d'erreur, suivi du curseur est fluide).",
+                    "Cela m'a forcé à réfléchir à toutes les options possibles, et finalement trouver la plus optimisée (qui fut loin de ce que j'imaginais au départ)"
+                ]
+            },
+            "password_maker": {
+                "alt":"Image du site password maker",
+                "title": "Password maker",
+                "details": [
+                    "Création de mots de passes :",
+                    "Regexp, gestion des filtres, algorithme de “randomisation”..."
+                ],
+                "hiddenDetails": [
+                    "Gérer les options personnalisables de l'utilisateur, au vu du nombre de possibilités fut complexe.",
+                    "À partir de ce projet, j'ai appris à être plus 'modulaire' dans mon approche, j'ai mieux découpé mes fonctions, pour plus de clarté."
+                ]
+            },
+            "booki": {
+                "alt":"Image du site booki",
+                "title": "Booki",
+                "details": [
+                    "Site de réservation de chambres d'hôtel :",
+                    "Integration à partir d'une maquette, optimisation des images, responsive design..."
+                ],
+                "hiddenDetails": [
+                    "La maquette est un guide formidable, mais par le fait même, elle est exigeante, intransigeante.",
+                    "Les écarts dans la typographie, les espacements, ou les tailles d'images ont été évités autant que possible.",
+                    "Et ce, en tenant compte de la compatibilité des navigateurs, ainsi qu'une certaine notion d'accessibilité."
+                ]
+            },
+            "parallax_jungle": {
+                "alt":"Image du site parallax jungle",
+                "title": "Parallax jungle",
+                "details": [
+                    "Effet de parallax :",
+                    "Superposition d'images, tranlation, gestions des positions et de vitesse de transition..."
+                ],
+                "hiddenDetails": [
+                    "Placer les images dans le bon ordre (avec des z-index) pour créer la profondeur souhaitée, tout en s'assurant qu’elles sont bien positionnées, a été un défis, notemment sur l'aspect responsiv design..",
+                    "Il a fallu faire en sorte que chaque élément se déplace à une vitesse différente, tout en restant visuellement cohérent."
+                ]
+            }
+        }
+    },
+    "tools": {
+        "title": "Mes outils / technos",
+        "dev_tools": {
+            "title": "Côté programmation",
+            "logos": {
+                "node":"logo de Node.js",
+                "mongo":"logo de mongoDB",
+                "React":"logo de React",
+                "javascript":"logo de Javascript",
+                "css":"logo de CSS",
+                "sass":"logo de SASS",
+                "tailwind":"logo de Tailwind"
+            }
+        },
+        "other_tools": {
+            "title": "Côté design et collaboration",
+            "logos": {
+                "figma":"logo de Figma",
+                "canva":"logo de Canva",
+                "github":"logo de Github",
+                "trello":"logo de Trello"
+            }
+        }
+    },
+    "profil": {
+        "title": "À propos de moi",
+        "img":"Photo de moi même",
+        "bio": [
+            "Je m'exerce à la programmation depuis 2022, et suis actuellement une formation en développement web avec Openclassrooms.",
+            "Une base solide en HTML/CSS/JS, plusieurs projets en React et encore plus à venir, quelques projets en Node.js afin d'élargir mes horizons...",
+            "L'objectif maintenant, full stack! A suivre..."
+        ],
+        "cv": "Mon CV",
+        "github":"logo de Github"
+    },
+    "contact": {
+        "title": "Contact",
+        "mail": "Copié !"
+    },
+    "footer": "Dernière mise à jour : 09/2024"
+}

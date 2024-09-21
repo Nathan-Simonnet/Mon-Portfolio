@@ -16,6 +16,7 @@
   color: #fff;
   font-family: "Jost", "Montserrat";
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 html {
@@ -686,9 +687,24 @@ section#profile .profile-container .profile-bio_and_cv-container .profile-bio-co
 section#profile .profile-container .profile-bio_and_cv-container .profile-bio-container p:last-child {
   padding: 0;
 }
-section#profile .profile-container .profile-bio_and_cv-container .profile-cv-container .btn-cv {
+section#profile .profile-container .profile-bio_and_cv-container .profile-cv_and_github-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+section#profile .profile-container .profile-bio_and_cv-container .profile-cv_and_github-container .btn-cv {
   height: 40px;
   width: 100px;
+}
+section#profile .profile-container .profile-bio_and_cv-container .profile-cv_and_github-container .profile-github-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s;
+}
+section#profile .profile-container .profile-bio_and_cv-container .profile-cv_and_github-container .profile-github-link:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 926px) {
@@ -712,7 +728,7 @@ section#profile .profile-container .profile-bio_and_cv-container .profile-cv-con
     align-items: center;
     gap: 60px;
   }
-  section#profile .profile-container .profile-bio_and_cv-container .profile-cv-container {
+  section#profile .profile-container .profile-bio_and_cv-container .profile-cv_and_github-container {
     text-align: center;
   }
 }
@@ -768,35 +784,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-}
-footer .footer-links-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-}
-footer .footer-links-container .footer-link-container {
-  width: 40px;
-}
-footer .footer-links-container .footer-link-container .footer-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer .footer-links-container .footer-link-container .footer-link .footer-link-img {
-  width: 100%;
-}
-footer .footer-links-container .footer-link-container .footer-link .footer-link-img:hover {
-  transform: scale(1.1);
-}
-@media (max-width: 600px) {
-  footer .footer-links-container {
-    gap: 35px;
-  }
-  footer .footer-links-container .footer-link-container {
-    width: 35px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
