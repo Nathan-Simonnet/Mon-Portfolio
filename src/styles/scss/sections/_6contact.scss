@@ -1,31 +1,58 @@
 section#contact {
     .contact-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        gap: 60px;
         margin-top: 60px;
 
         .btn-contact {
             height: 50px;
             width: 240px;
 
+            font-size: 1rem;
+
         }
+
         .contact-linkedin-link {
             display: flex;
             justify-content: flex-start;
             align-items: center;
+
+            height: 50px;
+
+            img {
+                height: 50px;
+                transition: 0.1s;
+
+            }
+
+            img:hover {
+                transform: scale(1.1);
+            }
         }
     }
 }
 
 
 @include breakpoint(medium) {
-    .contact-container {
-        text-align: center;
+    section#contact {
+        .contact-container {
+            justify-content: center;
+            gap: 30px;
+        }
     }
 }
 
 @include breakpoint(small) {
-
     section#contact {
         .contact-container {
+           display:flex;
+           flex-direction:column-reverse;
+           justify-content:center;
+           align-items:center;
+           
             margin-top: 30px;
         }
     }

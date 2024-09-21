@@ -16,7 +16,6 @@
   color: #fff;
   font-family: "Jost", "Montserrat";
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 html {
@@ -28,14 +27,6 @@ body {
   top: 0 !important;
   background: url(/src/assets/images/background_black-desk.jpg) fixed;
   overflow-x: hidden;
-}
-
-#google_translate_element {
-  display: none;
-}
-
-.skiptranslate {
-  display: none;
 }
 
 section {
@@ -121,7 +112,7 @@ hr {
   transition: 0.3s;
 }
 
-.btn:hover {
+.btn:hover, .btn:active {
   background: none;
   border: 1px solid rgb(163, 21, 47);
 }
@@ -610,7 +601,7 @@ section#tools .tools-container .specific-tools-container .tools-logos-container 
 section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container .tools-logo {
   width: 80px;
 }
-section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container:hover .tools-logo-name, section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container:focus .tools-logo-name {
+section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container:hover .tools-logo-name, section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container:focus .tools-logo-name, section#tools .tools-container .specific-tools-container .tools-logos-container .tools-logo-container:active .tools-logo-name {
   opacity: 1;
   width: 120px;
   padding: 12px;
@@ -694,8 +685,12 @@ section#profile .profile-container .profile-bio_and_cv-container .profile-links-
   gap: 30px;
 }
 section#profile .profile-container .profile-bio_and_cv-container .profile-links-container .btn-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 40px;
   width: 100px;
+  font-size: 1rem;
 }
 section#profile .profile-container .profile-bio_and_cv-container .profile-links-container .profile-github-link, section#profile .profile-container .profile-bio_and_cv-container .profile-links-container .profile-facebook-link {
   display: flex;
@@ -703,7 +698,7 @@ section#profile .profile-container .profile-bio_and_cv-container .profile-links-
   align-items: center;
   transition: 0.1s;
 }
-section#profile .profile-container .profile-bio_and_cv-container .profile-links-container .profile-github-link:hover, section#profile .profile-container .profile-bio_and_cv-container .profile-links-container .profile-facebook-link:hover {
+section#profile .profile-container .profile-bio_and_cv-container .profile-links-container .profile-github-link:hover, section#profile .profile-container .profile-bio_and_cv-container .profile-links-container .profile-facebook-link:hover, section#profile .profile-container .profile-bio_and_cv-container .profile-links-container .profile-facebook-link:active {
   transform: scale(1.1);
 }
 
@@ -762,25 +757,43 @@ section#profile .profile-container .profile-bio_and_cv-container .profile-links-
   }
 }
 section#contact .contact-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 60px;
   margin-top: 60px;
 }
 section#contact .contact-container .btn-contact {
   height: 50px;
   width: 240px;
+  font-size: 1rem;
 }
 section#contact .contact-container .contact-linkedin-link {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  height: 50px;
+}
+section#contact .contact-container .contact-linkedin-link img {
+  height: 50px;
+  transition: 0.1s;
+}
+section#contact .contact-container .contact-linkedin-link img:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 926px) {
-  .contact-container {
-    text-align: center;
+  section#contact .contact-container {
+    justify-content: center;
+    gap: 30px;
   }
 }
 @media (max-width: 600px) {
   section#contact .contact-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     margin-top: 30px;
   }
 }

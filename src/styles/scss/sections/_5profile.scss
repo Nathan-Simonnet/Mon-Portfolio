@@ -48,8 +48,13 @@ section#profile {
                 gap: 30px;
 
                 .btn-cv {
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+
                     height: 40px;
                     width: 100px;
+                    font-size: 1rem;
                 }
                 .profile-github-link, .profile-facebook-link {
                     display:flex;
@@ -57,7 +62,7 @@ section#profile {
                     align-items:center;
                     transition: 0.1s;
                 }
-                .profile-github-link:hover,  .profile-facebook-link:hover{
+                .profile-github-link:hover,  .profile-facebook-link:hover, .profile-facebook-link:active{
                     transform: scale(1.1);
                 }
             }
