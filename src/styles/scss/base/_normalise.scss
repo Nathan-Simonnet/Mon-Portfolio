@@ -32,7 +32,7 @@ html {
 
 body {
     top: 0 !important; // to prevent google translate widget to move it 
-    background: url(/src/assets/images/background_black-desk.jpg) fixed;
+    background: url(/src/assets/images/background_img_black-desk_1920.webp) fixed;
     overflow-x: hidden;
 }
 
@@ -158,6 +158,10 @@ hr {
 
 @include breakpoint(medium) {
 
+    body{
+        background: url(/src/assets/images/background_img_black-desk_1080.webp) fixed;
+    }
+    
     section {
         padding: 60px 0;
     }
@@ -193,7 +197,9 @@ hr {
 }
 
 @include breakpoint(small) {
-
+    body{
+        background: url(/src/assets/images/background_img_black-desk_780.webp) fixed;
+    }
     section,
     footer {
         padding: 30px 0;
