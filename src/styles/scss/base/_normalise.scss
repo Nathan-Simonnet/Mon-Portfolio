@@ -198,7 +198,7 @@ hr {
 
 @include breakpoint(small) {
     body{
-        background: url(/src/assets/images/background_img_black-desk_780.webp) fixed;
+        background: url(/src/assets/images/background_img_black-desk_780.webp) fixed cover;
     }
     section,
     footer {
