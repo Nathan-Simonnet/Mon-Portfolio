@@ -64,7 +64,6 @@ function translatePage(datas) {
     }
 
     document.getElementById('btnCv').textContent = datas.profile.cv;
-    document.querySelector('.facebook-logo').alt = datas.profile.facebook;
 
     // Contact
     document.getElementById('section-contact-title').textContent = datas.contact.title;
@@ -123,18 +122,19 @@ function textInjection() {
 textInjection()
 
 
-// Get the current URL
-const urlParams = new URLSearchParams(window.location.search);
+// // Get the current URL
+// const urlParams = new URLSearchParams(window.location.search);
 
-// Get the 'urlLang' query parameter
-const urlLang = urlParams.get('lang');
-if (urlLang == "fr") {
-    setTimeout(() => {
-        alert("fr!!!!!")
-    }, 2000)
-}
+// // Get the 'urlLang' query parameter
+// const urlLang = urlParams.get('lang');
+// console.log(urlLang)
+
+// if (urlLang == "fr" ) {
+//         alert("fr!!!!!")
+// }
 // // Check if 'urlLang' exists and log it
-// if (urlLang == "en") {
+// else if (urlLang == "en") {
+//     alert("en!!!!!")
 //     document.querySelectorAll('.flag-container').forEach((flagToTrim) => {
 //         flagToTrim.classList.remove("current-language");
 //     });
@@ -152,7 +152,11 @@ if (urlLang == "fr") {
 
 //     }, 200)
 //     console.log(lang)
+// } else{
+//     alert("otro!!!!!")
 // }
+
+
 
 // // Header
 // ==================================================================
