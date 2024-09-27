@@ -200,7 +200,7 @@ document.querySelectorAll('.flag-container').forEach((flag) => {
 });
 
 //hamburger
-// -----------------------------
+// ====================================
 document.querySelector('.hamburger').addEventListener('click', function () {
 
     this.classList.toggle('is-active');
@@ -227,6 +227,7 @@ document.querySelector('.hamburger').addEventListener('click', function () {
 // // Projects
 // // ===================================================================
 
+// Anim translation?
 
 // // Contact
 // // ===============================================================
@@ -240,7 +241,7 @@ btnContact.addEventListener('click', (btn) => {
     setTimeout(() => { btn.target.textContent = "nathan.simonnet@gmail.com" }, 1000);
 });
 
-// //Arrow
+// //Cards arrows
 // // ===============================
 
 document.querySelectorAll('.app-details-arrow').forEach((arrow) => {
