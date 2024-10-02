@@ -14,6 +14,114 @@
     <!-- <link rel='stylesheet' href='src/styles/style.css'> -->
     <link rel='stylesheet' href='src/styles/style.min.css'>
     <title>Portfolio de Nathan Simonnet</title>
+
+<!-- Structured Data for Home Page -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Nathan Simonnet Portfolio",
+      "description": "Portfolio of Nathan Simonnet, showcasing web development projects, skills, and contact information.",
+      "url": "https://nathan-simonnet.com"
+    }
+    </script>
+    
+    <!-- Structured Data for Projects Section -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "Portfolio Project: Personal Website",
+      "description": "A portfolio website built using HTML, CSS, and JavaScript to showcase web development skills.",
+      "dateCreated": "2024",
+      "creator": {
+        "@type": "Person",
+        "name": "Nathan Simonnet"
+      },
+      "url": "https://nathan-simonnet.com/#projects"
+    }
+    </script>
+    
+    <!-- Structured Data for Stack/Tools Section -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Stack/Tools",
+      "description": "Technologies and tools used by Nathan Simonnet in web development projects.",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Node.js",
+          "url": "https://nodejs.org/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "MongoDB",
+          "url": "https://www.mongodb.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "React",
+          "url": "https://reactjs.org/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "JavaScript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "SASS",
+          "url": "https://sass-lang.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Tailwind",
+          "url": "https://tailwindcss.com/"
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Structured Data for About Me Section -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nathan Simonnet",
+      "jobTitle": "Web Developer",
+      "description": "Web developer specializing in front-end development with experience in HTML, CSS, JavaScript, and React.",
+      "url": "https://nathan-simonnet.com/#profile",
+      "sameAs": [
+        "https://github.com/Nathan-Simonnet, https://www.canva.com/design/DAGRBFSO-KE/2scE0fRfAs7SbH98Swk0Dg/edit?utm_content=DAGRBFSO-KE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+      ]
+    }
+    </script>
+    
+    <!-- Structured Data for Contact Section -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPoint",
+      "contactType": "Customer Support",
+      "email": "nathan.simonnet@gmail.com",
+      "url": "https://nathan-simonnet.com/#contact"
+    }
+    </script>
+    
 </head>
 
 <body>
@@ -733,7 +841,7 @@
                     </div>
                     <div class="profile-links-container">
                         <a href="https://www.canva.com/design/DAGRBFSO-KE/2scE0fRfAs7SbH98Swk0Dg/edit?utm_content=DAGRBFSO-KE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-                            target="_blank" class="btn btn-cv profile-cv" id="btnCv" >Mon CV</a>
+                            target="_blank" class="btn btn-cv profile-cv" id="btnCv">Mon CV</a>
                         <a href="https://github.com/Nathan-Simonnet" target="_blank" class="profile-github-link">
                             <img src="src/assets/images/Links/logo_github_40px.webp"
                                 class="profile-github-img github-logo" alt="Logo de Github"></a>
@@ -760,8 +868,8 @@
             <div class="contact-container">
                 <button class="btn btn-contact" id="btnContact">nathan.simonnet@gmail.com</button>
                 <a href="https://www.linkedin.com/in/simonnet-nathan/" target="_blank" class="contact-linkedin-link">
-                    <img src="src/assets/images/Links/logo_linkedin_80px.png"
-                        class="contact-linkedin-img linkedin-logo" alt="logo de linkedin" height="50">
+                    <img src="src/assets/images/Links/logo_linkedin_80px.png" class="contact-linkedin-img linkedin-logo"
+                        alt="logo de linkedin" height="50">
                 </a>
             </div>
         </section>
