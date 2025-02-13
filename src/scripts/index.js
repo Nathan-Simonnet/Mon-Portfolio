@@ -33,10 +33,6 @@ function translatePage(datas) {
 
         document.getElementById(projectToTranslate + '-details-paragraph-container').children[0].textContent = datas.projects.cards[projectToTranslate].details[0];
         document.getElementById(projectToTranslate + '-details-paragraph-container').children[1].textContent = datas.projects.cards[projectToTranslate].details[1];
-
-        for (let i = 0; i < datas.projects.cards[projectToTranslate].hiddenDetails.length; i++) {
-            document.getElementById(projectToTranslate + '-hidden-details-container').children[i].textContent = datas.projects.cards[projectToTranslate].hiddenDetails[i];
-        }
     }
 
     document.querySelectorAll('.app-card').forEach((project) => {
@@ -81,13 +77,6 @@ function langJsonFecther() {
         .catch((error) => console.log(error))
 }
 
-// Google translate widget 
-// function translatePage(lang) {
-//     const inputSelect = document.querySelector('.goog-te-combo');
-//     inputSelect.value = lang;
-//     const event = new Event('change')
-//     inputSelect.dispatchEvent(event);
-// }
 
 
 // //Home page
@@ -207,12 +196,6 @@ document.querySelector('.hamburger').addEventListener('click', function () {
     const ul = document.querySelector('header>nav>ul');
     ul.classList.toggle("open");
 
-    // Allow transition only for th hamburger state
-    ul.style.transition = "0.3s"
-    setTimeout(() => {
-        ul.style.transition = "none"
-    }, 500)
-
     ul.addEventListener('click', () => {
         ul.classList.remove("open");
     });
@@ -224,10 +207,6 @@ document.querySelector('.hamburger').addEventListener('click', function () {
 
 });
 
-// // Projects
-// // ===================================================================
-
-// Anim translation?
 
 // // Contact
 // // ===============================================================
@@ -237,21 +216,6 @@ document.querySelector('.hamburger').addEventListener('click', function () {
 // Copy the mail, and change the content for 1s
 btnContact.addEventListener('click', (btn) => {
     navigator.clipboard.writeText(btn.target.textContent);
-    lang == "fra" ? btn.target.textContent = "Copié !" : btn.target.textContent = "Copy !"
+    lang == "fr" ? btn.target.textContent = "Copié !" : btn.target.textContent = "Copy !"
     setTimeout(() => { btn.target.textContent = "nathan.simonnet@gmail.com" }, 1000);
-});
-
-// //Cards arrows
-// // ===============================
-
-document.querySelectorAll('.app-details-arrow').forEach((arrow) => {
-
-    arrow.addEventListener('click', () => {
-        arrow.classList.toggle('rotated');
-        arrow.previousElementSibling.classList.toggle('visible')
-    });
-
-    arrow.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') { e.target.click(); }
-    });
 });
