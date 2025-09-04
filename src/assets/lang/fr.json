@@ -33,6 +33,18 @@
     "projects": {
         "title": "Quelques projets",
         "cards": {
+            "bookstore": {
+                "alt":"Image du site bookstore",
+                "title": "Bookstore VPS",
+                "details": [
+                    "Petit répertoire de livres virtuel :",
+                    "Hébergée sur VPS, cette application est faite en MEVN (Mongo, Express, Vue.js, Node)"
+                ],
+                "hiddenDetails": [
+                    "Ce projet m'a permis d'uploader une application fullstack sur un VPS. Docker compose et git action sont mes prochains objectifs",
+                    "Et évidement commencer à pratiquer en MEVN."
+                ]
+            },
             "kasa": {
                 "alt":"Image du site Kasa",
                 "title": "Kasa",

@@ -33,6 +33,18 @@
     "projects": {
         "title": "Some projects",
         "cards": {
+            "bookstore": {
+                "alt":"Image of the site bookstore",
+                "title": "Bookstore VPS",
+                "details": [
+                    "Small virtual book directory :",
+                    "Hosted on VPS, this application is built using MEVN (Mongo, Express, Vue.js, Node)."
+                ],
+                "hiddenDetails": [
+                    "This project allowed me to upload a full-stack application to a VPS. Docker Compose and Git Actions are my next goals.",
+                    "And, of course, start practicing in MEVN."
+                ]
+            },
             "kasa": {
                 "alt": "Image of the site Kasa",
                 "title": "Kasa",
