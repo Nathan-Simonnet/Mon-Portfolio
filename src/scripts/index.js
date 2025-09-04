@@ -30,7 +30,6 @@ function translatePage(datas) {
 
     function translateProject(projectToTranslate) {
         document.getElementById(projectToTranslate + '-img').alt = datas.projects.cards[projectToTranslate].alt;
-
         document.getElementById(projectToTranslate + '-details-paragraph-container').children[0].textContent = datas.projects.cards[projectToTranslate].details[0];
         document.getElementById(projectToTranslate + '-details-paragraph-container').children[1].textContent = datas.projects.cards[projectToTranslate].details[1];
     }
