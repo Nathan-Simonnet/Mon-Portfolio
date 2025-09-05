@@ -184,9 +184,9 @@
         "title": "À propos de moi",
         "img":"Photo de moi",
         "bio": [
-            "Je m'exerce à la programmation depuis 2022, et suis actuellement une formation en développement web avec Openclassrooms.",
-            "Une base solide en HTML/CSS/JS, plusieurs projets en React et encore plus à venir, quelques projets en Node.js afin d'élargir mes horizons...",
-            "L'objectif maintenant, full stack! A suivre..."
+            "Je m'exerce à la programmation depuis 2022, notament en HTML/CSS, et suis actuellement une formation de <strong> concepteur développeur d'application</strong>.",
+            "Une base solide en JS/React, et plus récemment Vue.js, qui est le framework que j'aime le plus à l'heure actuelle (et je compte bien en faire une spécialité). Mes derniers projet fullstack sont en MEVN (Mongo, Express, Vue.js, Node), afin de parfaire mes notions de backend en Node.js.",
+            "L'objectif maintenant, des projets de plus grande envergure encore !... À suivre"
         ],
         "cv": "Mon CV"
     },

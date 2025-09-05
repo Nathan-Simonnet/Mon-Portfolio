@@ -184,9 +184,9 @@
         "title": "About me",
         "img": "Photo of myself",
         "bio": [
-            "I've been practicing programming since 2022 and am currently following a web development course with OpenClassrooms.",
-            "A solid foundation in HTML/CSS/JS, several React projects and more to come, a few Node.js projects to broaden my horizons...",
-            "The goal now is full stack! To be continued..."
+            "I've been practicing programming since 2022, particularly in HTML/CSS, and am currently training to become an application developer.",
+            "A solid foundation in JS/React, and more recently Vue.js, which is the framework I currently enjoy the most (and I plan to specialize in it). My latest full-stack projects are in MEVN (Mongo, Express, Vue.js, Node), in order to perfect my backend knowledge in Node.js.",
+            "The goal now is even larger projects!... To be continued"
         ],
         "cv": "My CV"
     },
