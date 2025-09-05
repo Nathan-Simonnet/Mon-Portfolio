@@ -72,7 +72,11 @@ function translatePage(datas) {
 function langJsonFecther() {
     fetch('/src/assets/lang/' + lang + '.json')
         .then((response) => response.json())
-        .then((data) => translatePage(data))
+        .then( (data) =>  {
+            console.log(data)    
+            translatePage(data);
+            }
+        )
         .catch((error) => console.log(error))
 }
 
